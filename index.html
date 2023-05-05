@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to My Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Loading Animation Page</title>
+    <style>
+      /* Center the loading animation in the middle of the page */
+      .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      /* Style the loading animation */
+      .loading::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 5px solid #ccc;
+        border-top-color: #333;
+        animation: spin 1s ease-in-out infinite;
+      }
+      
+      /* Animation keyframes */
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Welcome to My Website</h1>
-    </header>
-    
-    <main>
-      <p>Thank you for visiting my website! Here you will find information about my interests, projects, and more. 
-</p>
-      <button><a href="about.html">Learn More</a></button>
-    </main>
-    
-    <footer>
-      <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
+    <!-- Display the loading animation -->
+    <div class="loading"></div>
   </body>
 </html>
