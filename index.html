@@ -1,39 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Loading Animation Page</title>
-    <style>
-      /* Center the loading animation in the middle of the page */
-      .loading {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      
-      /* Style the loading animation */
-      .loading::after {
-        content: "";
-        display: block;
-        width: 50px;
-        height: 50px;
-        margin: 0 auto;
-        border-radius: 50%;
-        border: 5px solid #ccc;
-        border-top-color: #333;
-        animation: spin 1s ease-in-out infinite;
-      }
-      
-      /* Animation keyframes */
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Display the loading animation -->
-    <div class="loading"></div>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="logo.jpg" alt="logo">
+                        <span class="nav-item"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <icon class="fas fa-home"></icon>
+                        <span class="nav-item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <icon class="fas fa-home"></icon>
+                        <span class="nav-item">Videos</span>
+                    </a> 
+                </li>
+                <li>
+                    <a href="index.html">
+                        <icon class="fas fa-sharp fa-solid fa-person-chalkboard"></icon>
+                        <span class="nav-item">Teachers</span>
+                    </a> 
+                </li>
+                <li>
+                    <a href="index.html">
+                        <icon class="fas fa-solid fa-book"></icon>
+                        <span class="nav-item">Study Materials</span>
+                    </a> 
+                </li>
+                <li><a href="index.html">
+                        <icon class="fas fa-solid fa-circle-question"></icon>
+                        <span class="nav-item">FAQ</span>
+                    </a> 
+                </li>
+                <li><a href="index.html">
+                        <icon class="fas fa-solid fa-gear"></icon>
+                        <span class="nav-item">Settings</span>
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/6add49a41c.js" crossorigin="anonymous"></script> 
+</body>
+
 </html>
