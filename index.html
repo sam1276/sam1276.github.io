@@ -5,6 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+
+    <h1>Database</h1>
+    <p>
+        A database is a structured storage system for organizing and managing data efficiently. It allows easy
+        retrieval, updating, and manipulation of information.</p>
+
+    <h1>Server</h1>
+    <p>A server is a computer or software system that provides services or resources to other devices, responding to
+        their requests.</p>
+    <h1>Clint</h1>
+    <p>A client is a device or software application that requests services or resources from a server and receives the
+        responses containing the requested information.</p>
+
+    <h1></h1>
+    <h1>SQL
+    </h1>
+    <p>
+        SQL (Structured Query Language) is a programming language used for managing and manipulating relational
+        databases, enabling data retrieval, insertion, updating, and deletion.
+    </p>
+    <h1>MySql</h1>
+    <p>MySQL is an open-source relational database management system (RDBMS) that uses SQL as its query language, widely
+        used for web applications and various data-driven projects. <a href="#">Download Guide</a></p>
+    <h1>
+        Relational Data
+    </h1>
+    <p>Relational data is organized in structured tables with rows and columns, allowing relationships to be established
+        between different tables based on shared data, commonly managed through SQL.</p>
+    <h1>Relation Database</h1>
+    <p>A relational database organizes data into tables with rows and columns, using SQL for data management. It allows
+        efficient storage, retrieval, and manipulation of interconnected data.</p>
+    <h1> Relational Database Model</h1>
+    <p>The relational data model is a way of structuring data in tables with rows and columns, and establishing
+        relationships between these tables based on shared data, facilitating efficient data management and retrieval.
+        It is a fundamental concept in relational database management systems (RDBMS).</p>
+
+    <h1>Components of Table
+    </h1>
+    <p class="littsp"><span class="subhd">Columns (Attributes)</span> <span class="para"> : Columns represent the
+            individual data fields in the table, defining the type of data they can hold.</span><br></p>
+
+    <p class="littsp"><span class="subhd">Rows (Records)</span><span class="para"> : Rows are the individual entries in
+            the table, containing data related to specific entities or records.</span><br></p>
+
+    <p class="littsp"><span class="subhd">Cells</span> : <span class="para"></span> Cells are the intersections of rows
+        and columns, holding single values representing specific data.</span><br>
+    </p>
+    <p class="littsp"><span class="subhd">Primary Key</span><span class="para"> : A primary key is a unique identifier
+            for each row, ensuring that each record can be uniquely identified and used for establishing relationships
+            with other tables.</span>
+    </p>
+
+    <h1>Keys</h1>
+    <p>Keys refer to specific columns or combinations of columns that play essential roles in defining the structure and
+        relationships within a database.</p>
+    <h2>Here are some common types of keys :</h2>
+
+    <p class="littsp"><span class="subhd">Primary Key</span> <span class="para"> : A primary key is a unique identifier
+            for each row in a table. It ensures that each record can be uniquely identified and serves as a reference
+            for establishing relationships with other tables.</span></p>
+    <p class="littsp"><span class="subhd">Foregin Key</span> <span class="para"> : A foreign key is a column or set of
+            columns in one table that refers to the primary key of another table. It creates relationships between
+            tables, enabling data integrity and data retrieval across related tables.</span></p>
+    <p class="littsp"><span class="subhd">Candidate Key</span> <span class="para"> : A candidate key is a column or
+            combination of columns that could potentially serve as a primary key. It must be unique and capable of
+            uniquely identifying each row in the table.</span></p>
+    <p class="littsp"><span class="subhd">Super Key</span> <span class="para"> : A super key is a set of one or more
+            columns that, taken together, uniquely identify rows in a table. It may or may not be minimal in size,
+            meaning it may contain more columns than needed to identify rows uniquely.</span></p>
+    <p class="littsp"><span class="subhd">Composite Key</span> <span class="para"> : A composite key is a key that
+            consists of multiple columns used together to uniquely identify rows in a table. It is an alternative to
+            using a single column as the primary key..</span></p>
+
+    <p>These keys play a crucial role in establishing relationships between tables and ensuring data integrity within a
+        relational database. They are vital components for data retrieval, modification, and maintenance in a structured
+        and efficient manner.</p>
+
+    <h1>Classification of SQL Statements (for 12th grade)</h1>
+    <p class="littsp"><span class="subhd"><a href="#">DML</a> (Data Manipulation Language)</span> <span class="para"> :
+            Used to manipulate data in the database, such as SELECT, INSERT, UPDATE, and DELETE statements.</span></p>
+    <p class="littsp"><span class="subhd"><a href="#">DDL</a> (Data Definition Language)</span> <span class="para"> :
+            Used to define and manage the database structure, including CREATE, ALTER, and DROP statements.</span></p>
+    <h1>MySQL Elements</h1>
+    <p>MySQL has certain elements that play an important role in querying a database.</p>
+    <h2>Literals</h2>
+    <p>Literals refer to a fixed data value
+
+    </p>
+
+    <div class="box">
+        <p class="jsas">748 #It is a numeric literal<br></p>
+        <p class="jsas">"ABCD" #It is a text literal<br></p>
+        <p class="jsas">82.5 #It is a real literal</p>
+    </div>
+
+    <h1>Data Types</h1>
+    <p>Data types are means to identify the type of data.</p>
+<div class="box">
+   <p class="jsas"> #Numeric <br>
+
+TINYINT : 1 byte, -128 to 127 <br>
+SMALLINT : 2 bytes, -32,768 to 32,767<br>
+MEDIUMINT : 3 bytes, -8,388,608 to 8,388,607<br>
+INT: 4 bytes, -2,147,483,648 to 2,147,483,647 <br>
+BIGINT : 8 bytes, -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 <br>
+</p>
+
+<p class="jsas">
+FLOAT(M,D) : Floating point data type <br>
+DOUBLE(M,D) : Double data type also stores decimal values <br>
+DECIMAL(M,D) : Decimal data type <br>
+</p>
+<p class="jsas">
+#Data and Time  <br>
+
+
+DATE : Date data type (YYYY-MM-DD) <br>
+DATETIME : It's a date and time combination (YYYY-MM-DD HH:MM:SS) <br>
+TIME : It stores time (HH:MM:SS) <br>
+#String/Text </p>
+<p class="jsas">
+CHAR(M) : Character data type <br>
+VARCHAR(M) : Variable character data type <br>
+BLOB or TEXT br
+</p>
+</div>
+
+<h1>NULL Values</h1>
+<p>If a column has no value, then it is said to be NULL</p>
+
+<h1>Comments</h1>
+
+<p>A comment is a text that is not executed.</p>
+
+
+<div class="box">
+    <code class="synt">/* This is a multi-line
+        comment in MySQL */ <br>
+        
+        # It is a single-line commen <br>      
+        -- It is also a single-line comment <br></code>
+</div>
+<div style="margin-top: 13px;"><span class="subhd">Note :</span> <span class="para"> SQL is not a case-sensitive language</span>
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="endbut"><a href="#" style="text-decoration: none; color: aliceblue;">Button</a></button>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -70,3 +276,4 @@
 </body>
 
 </html>
+ -->
