@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joining in MYSQL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>INNER JOIN</h1> 
+<p>It returns all rows from multiple tables where the join condition is satisfied. It is the most common type of join.</p>
+    <div class="box"><code class="synt">
+        SELECT columns FROM table1 INNER JOIN table2 ON table1.column = table2.column;
+    </code></div>
+    <h1>LEFT OUTER JOIN</h1>
+<p>It returns all rows from the left-hand table specified in the ON condition and only those rows from the other table where the join condition is fulfilled.</p>
+
+<div class="box"><code class="synt">
+    SELECT columns FROM table1 LEFT [OUTER] JOIN table2 ON table1.column = table2.column;
+</code></div>
+<h1>RIGHT OUTER JOIN</h1>
+<p>It returns all rows from the RIGHT-hand table specified in the ON condition and only those rows from the other table where the join condition is satisfied.</p>
+<div class="box"><code class="synt">
+    SELECT columns FROM table1 RIGHT [OUTER] JOIN table2 ON table1.column = table2.column;
+</code></div>
+
+<h1>Full Join</h1>
+<p>It combines the results of both left and right outer joins</p>
+<div class="box"><code class="synt">
+    SELECT column_name FROM table1 FULL OUTER JOIN table2 ON table1.column_name = table2.column_name WHERE condition;
+</code></div>
+
+
+
+<h1>Self Join</h1>
+<p>In this join, table is joined with itself.</p>
+<div class="box"><code class="synt">
+    SELECT column_name FROM table1 T1, table1 T2 WHERE condition;
+</code></div>
+
+
+</body>
+</html>

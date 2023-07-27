@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font-size: 3em">Altering Table</h1>
+    <p>These commands allow you to change the structure of the table.</p>
+    <h1>Rename</h1>
+<p>A table name can be changed using the reserver ‘rename’.</p>
+<div class="box"><code class="synt">
+    rename &lt;old_table_name&gt; to &lt;new_table_name&gt;; 
+</code></div>
+
+<h1>To Add New Column</h1>
+<p>It will add a new column in your table.</p>
+<div class="box"><code class="synt">
+    Alter Table &lt;table_name&gt; <br>
+        Add &lt;new_column&gt;;  
+</code></div>
+<h1>To Modify Old Column</h1>
+<p>It will update the data type or size of old column.</p>
+<div class="box"><code class="synt">
+    Alter Table &lt;table_name&gt; <br>
+        Modify &lt;old_column_name&gt; [&lt;new_data_type&gt;&lt;size&gt;];
+</code></div>
+<h1>To Change Name of Column</h1>
+<p>It will change the name of the old column in the table</p>
+<div class="box"><code class="synt">
+    Alter Table Change &lt;old_column_name&gt; &lt;new_column_name&gt;&lt;data_type&gt;;
+</code></div>
+
+
+
+
+
+</body>
+</html>

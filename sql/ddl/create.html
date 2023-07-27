@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="\sql\quicklinks" target="_blank" style="position: relative;">MENU</a>
+    <h1>Create table command</h1>
+    <p>This query is used to create a table in the selected database.</p>
+    <div class="box">
+        <code class="synt">
+            Create table &lt;table-name&gt; <br>
+            (&lt;column_name&gt; &lt;data_type&gt;, <br>
+            &lt;column_name&gt; &lt;data_type&gt;, <br>
+            &lt;column_name&gt; &lt;data_type&gt;);</code>
+    </div>
+
+    <h1 style="margin-top: 40px; font-size: 2.8em">SQL Constraints</h1>
+<p>SQL constraints are the rules or checks enforced on the data columns of a table.</p>
+<h1>NOT NULL</h1>
+<p>It will create a table with NOT NULL constraint to its first column.</p>
+<div class="box"><code class="synt">
+    Create table &lt;table_name&gt; <br>
+        ( &lt;col1&gt; &lt;data_type&gt; NOT NULL, <br>
+        &lt;col2&gt; &lt;data_type&gt;, <br>
+        &lt;col3&gt; &lt;data_type&gt;);
+</code></div>
+<h1>DEFAULT</h1>
+<p>DEFAULT constraint provides a default value to a column.</p>
+<div class="box"><code class="synt">
+    Create table &lt;table_name&gt; <br>
+        ( &lt;col1&gt; &lt;data_type&gt; DEFAULT 50, <br>
+        &lt;col2&gt; &lt;data_type&gt;, <br>
+        &lt;col3&gt; &lt;data_type&gt;);
+</code></div>
+<h1>CHECK</h1>
+<p>CHECK constraint ensures that all values in a column satisfy certain conditions.</p>
+<div class="box"><code class="synt">
+    Create table &lt;table_name&gt; <br>
+        ( &lt;col1&gt; &lt;data_type&gt; CHECK (condition), <br>
+        &lt;col2&gt; &lt;data_type&gt;, <br>
+        &lt;col3&gt; &lt;data_type&gt;);
+</code></div>
+<h1>Keys</h1>
+    <p>
+        In SQL, keys are used to uniquely identify records in a database table and establish relationships between
+        different tables. There are several types of keys, each serving a different purpose</p>
+    <h1>Primary Key</h1>
+    <p>
+        A primary key is a column or a combination of columns in a table that uniquely identifies each row in the table.
+        It must have unique values and it cannot contain NULL values. A table can have only one primary key.
+    </p>
+    <div class="box"><code class="synt">
+        Create table &lt;table_name&gt; <br>
+        ( &lt;col1&gt; &lt;data_type&gt; Primary Key, <br>
+        &lt;col2&gt; &lt;data_type&gt;, <br>
+        &lt;col3&gt; &lt;data_type&gt;);
+    </code></div>
+
+    <h1>Foreign Key</h1>
+    <p>
+        A foreign key establishes a link or relationship between two tables based on the values in one or more columns.
+        It points to the primary key or a unique key in another table, thereby enforcing referential integrity. It helps
+        maintain data consistency and ensures that the data between related tables remains synchronized.</p>
+    <div class="box"><code class="synt">
+        CREATE TABLE &lt;table_name&gt; ( <br>
+    &lt;col1 &lt;data_type&gt;, <br>
+    &lt;col2 &lt;data_type&gt;, <br>
+    &lt;col3 &lt;data_type&gt;, <br>
+    ... <br>
+    FOREIGN KEY (&lt;column_name&gt;) REFERENCES &lt;parent_table&gt; (&lt;parent_column&gt;) 
+);
+ </code></div>
+    <h1>Unique </h1>
+<p>A unique key is similar to a primary key in that it enforces uniqueness for a column or a combination of columns in a table.
+    Unlike a primary key, a unique key can contain NULL values, but if it contains values, those values must be unique.</p>
+
+    <div class="box"><code class="synt">
+        Create table &lt;table_name&gt; <br>
+            ( &lt;col1&gt; &lt;data_type&gt; UNIQUE, <br>
+            &lt;col2&gt; &lt;data_type&gt;, <br>
+            &lt;col3&gt; &lt;data_type&gt;);
+    </code></div>
+
+
+</body>
+</html>

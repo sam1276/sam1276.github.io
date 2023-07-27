@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Insert command </h1>
+    <p>It will add data into the selected table.</p>
+    <div class="box"><code class="synt">
+    Insert into &lt;table_name&gt; [&lt;column-list&gt;] <br>
+        Values (&lt;value1&gt;,&lt;value2&gt;...);
+</code></div>
+    <h1>Inserting NULL Values</h1>
+    <p>This query will add NULL value in the col3 of the selected table.</p>
+    <div class="box"><code class="synt">
+    Inset into &lt;table-name&gt; (col1, col2,col3) <br>
+    Values (val1,val2,NULL);
+</code></div>
+
+<h1>Inserting Dates</h1>
+<p>It will add the following data into the selected column of the table</p>
+<div class="box"><code class="synt">
+    Insert into &lt;table_name&gt; (&lt;col_name&gt;) <br>
+    Values ('2021-12-10');</code></div>
+
+</body>
+</html>

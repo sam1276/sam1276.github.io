@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font-size: 3em;">MySQL Nesting</h1>
+    <p>Nesting in MySQL refers to the practice of using one SQL query inside another. It allows you to break down complex queries into smaller parts, providing more flexibility and control over data retrieval and manipulation. Subqueries are commonly used for nesting in MySQL. They can be placed in the SELECT, FROM, WHERE, and HAVING clauses, enhancing the power and expressiveness of SQL statements.</p>
+    <h1>The syntax of nesting, specifically for subqueries, in SQL is as follows:</h1>
+    <h2>Subquery in the SELECT Clause:</h2>
+    <div class="box"><code class="synt">
+        SELECT column1, column2, (SELECT aggregate_function(column3) FROM table2 WHERE condition) AS computed_column <br>
+        FROM table1; 
+    </code></div>
+    <p>In this example, a subquery is used within the SELECT clause to calculate a computed column (computed_column). The subquery retrieves data from table2 based on the specified condition, and an aggregate function (e.g., SUM, COUNT, MAX, etc.) is applied to column3.</p>
+
+
+
+    <h2>Subquery in the FROM Clause (Derived Table):
+    </h2>
+    <div class="box"><code class="synt">
+        SELECT column1, column2 <br>
+        FROM (SELECT column1, column2 FROM table1 WHERE condition) AS derived_table;
+        
+    </code></div>
+
+
+
+    <p>Here, a subquery is used in the FROM clause to create a derived table (derived_table). The subquery retrieves data from table1 based on the specified condition, and then the outer query selects specific columns from the derived table.</p>
+
+
+    <h1>Subquery in the WHERE Clause:</h1>
+    <div class="box"><code class="synt">
+        SELECT column1, column2 <br>
+        FROM table1 <br>
+        WHERE column3 IN (SELECT column3 FROM table2 WHERE condition);
+        
+    </code></div>
+    <p>In this example, a subquery is used in the WHERE clause to filter rows from table1. The subquery retrieves data from table2 based on the specified condition, and the outer query selects rows from table1 where column3 matches the values returned by the subquery.</p>
+
+
+
+    <h1>Subquery in the HAVING Clause:</h1>
+    <div class="box"><code class="synt">
+        SELECT column1, column2 <br>
+        FROM table1 <br>
+        GROUP BY column1, column2 <br>
+        HAVING COUNT(*) > (SELECT COUNT(*) FROM table2 WHERE condition);
+        
+    </code></div>
+    <p>Here, a subquery is used in the HAVING clause to filter groups in the grouped result. The subquery retrieves data from table2 based on the specified condition, and the outer query selects groups from table1 where the count of rows in each group is greater than the count returned by the subquery.</p>
+
+<p> <span style="font-size: 1.3em;">NOTE</span> : Remember that when using subqueries, you should ensure that they return the expected results and are optimized for performance, especially when dealing with large datasets. Subqueries can be powerful tools for complex queries but should be used thoughtfully to avoid any potential performance issues.</p>
+
+
+
+</body>
+</html>

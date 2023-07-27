@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<h1>Select Command</h1>
+<p>A select query is used to fetch the data from the database.</p>
+<h1>Selecting All Data</h1>
+<p>It will retrieve all the data of the selected table.</p>
+<div class="box"><code class="synt">
+    Select * From &lt;table_name&gt;;
+</code></div>
+
+<h1>Selecting Particular Rows</h1>
+<p>It will retrieve all the data of the row that will satisfy the condition.</p>
+<div class="box"><code class="synt">
+    Select * from &lt;table_name&gt; <br>
+        Where &lt;condition_to_satisfy&gt;;
+</code></div>
+<h1>Selecting Particular Columns</h1>
+<p>It will retrieve data of selected columns that will satisfy the condition.</p>
+<div class="box"><code class="synt">
+    Select column1, column2 from &lt;table_name&gt;<br>
+        Where &lt;condition_to_satisfy&gt;;
+</code></div>
+<h1>DISTINCT Keyword</h1>
+<p>It will retrieve only distinct data i.e. duplicate data rows will get eliminated.</p>
+<div class="box"><code class="synt">
+    Select DISTINCT &lt;column_name&gt; from &lt;table_name&gt;;
+</code></div>
+<h1>All Keyword</h1>
+<p>It will retrieve all the data of the selected column.</p>
+<div class="box"><code class="synt">
+    Select ALL &lt;column_name&gt; from &lt;table_name&gt;;
+</code></div>
+<h1>Column Aliases</h1>
+<p>It is used to give a temporary name to a table or a column in a table for the purpose of a particular query.</p>
+<div class="box"><code class="synt">
+    Select &lt;column1&gt;,&lt;column2&gt; AS &lt;new_name&gt;
+        From &lt;table_name&gt;;
+</code></div>
+<h1>Condition Based on a Range</h1>
+<p>It will only retrieve data of those columns whose values will fall between value1 and value2 (both inclusive).</p>
+<div class="box"><code class="synt">
+    Select &lt;co11&gt;, &lt;col2&gt; <br>
+        From &lt;table_name&gt; <br>
+        Where &lt;value1&gt; Between &lt;value2&gt;;
+</code></div>
+<h1>Condition Based on a List</h1>
+<div class="box"><code class="synt">
+    Select * from &lt;table_name&gt; <br>
+        Where &lt;column_name&gt; IN (&lt;val1&gt;,&lt;val2&gt;,&lt;val3&gt;);
+</code></div>
+
+<div class="box" style="margin-top: 10px;">
+    <code class="synt">
+    Select * from &lt;table_name&gt; <br>
+    Where &lt;column_name&gt; NOT IN (&lt;val1&gt;,&lt;val2&gt;,&lt;val3&gt;);
+</code></div>
+<h1>Condition Based on Pattern Match</h1>
+<div class="box"><code class="synt">
+    Select &lt;col1&gt;,&lt;col2&gt; <br>
+        From &lt;table_name&gt; <br>
+        Where &lt;column&gt; LIKE 'Ha%'; <br>
+</code></div>
+
+<div class="box" style="margin-top: 10px;">
+    <code class="synt">
+    Select &lt;col1&gt;,&lt;col2&gt; <br>
+        From &lt;table_name&gt; <br>
+        Where &lt;column&gt; LIKE 'Ha__y%';
+</code></div>
+<h1>Searching NULL</h1>
+<p>It returns data that contains a NULL value in them.</p>
+<div class="box"><code class="synt">
+    Select &lt;column1&gt;, &lt;column2&gt; <br>
+        From &lt;table_name&gt; Where &lt;Val&gt; IS NULL;
+</code></div>
+  
+
+
+</body>
+</html>

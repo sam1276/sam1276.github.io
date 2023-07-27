@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group and Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="font-size: 3em;">Ordering Records</h1>
+    <p>Order by clause is used to sort the data in ascending or descending order of specified column.</p>
+    <h1>Order by clause</h1>
+    <p>It will return records in the ascending order of the specified column name's data.</p>
+    <div class="box"><code class="synt">
+        Select * from &lt;table_name&gt; order by &lt;column_name&gt;;
+    </code></div>
+    <p>It will return records in the descending order of the specified column name's data.</p>
+<div class="box"><code class="synt">
+    Select * from &lt;table_name&gt; order by &lt;column_name&gt; DESC;
+</code></div>
+<h1>Ordering data on multiple columns</h1>
+<p>It will return records in the ascending order of column1 and descending order of column2</p>
+<div class="box"><code class="synt">
+    Select * From &lt;table_name&gt; order by &lt;column1&gt; ASC, &lt;column2&gt; DESC;
+</code></div>
+
+<h1 style="font-size: 3em; margin-top: 50px;">Grouping Result</h1>
+<p>It is used to arrange identical data into groups so that aggregate functions can work on them.</p>
+<h1>Group by clause</h1>
+<p>It allows you to group two or more columns and then you can perform aggregate function on them.</p>
+<div class="box"><code class="synt">
+    Select &lt;column&gt;, Count(*) from &lt;table_name&gt; group by &lt;column&gt;;
+</code></div>
+<h1>Having clause</h1>
+<p>Having clause is used to put conditions on groups.</p>
+<div class="box"><code class="synt">
+    Select avg(&lt;column&gt;), sum(&lt;column&gt;) from &lt;table_name&gt; group by &lt;column_name&gt; having &lt;condition_to_satisfy&gt;;
+</code></div>
+
+
+
+
+
+
+
+</body>
+</html>
