@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="qno">Question Number 9</h1>
+    <span class="section">Section A</span>
+    <span class="marks">1 Marks</span>
+    <br>
+    <div class="question">
+        <p>Which of the following statement(s) would give an error during execution of the following code?</p>
+        <div class="qbox"><code class="qcode">
+            tup = (20,30,40,50,80,79) <br>
+            print(tup) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #Statement 1 <br>
+            print(tup[3]+50) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #Statement 2 <br>
+            print(max(tup)) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#Statement 3 <br>
+            tup[4]=80 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #Statement 4
+    </code></div>
+    </div>
+    <div class="option">
+        <p>a. Statement 1</p>
+        <p>b. Statement 2</p>
+        <p>c. Statement 3</p>
+        <p>d. Statement 4</p>
+    </div>
+    <span class="answord">Answer</span>
+    <div class="boxans"><code class="anstxt">
+        d. Statement 4
+    </code></div>
+
+    <span class="answord">Explanation</span>
+
+    <p>
+        Statement 1 (tup = (20,30,40,50,80,79)): This statement defines a tuple tup containing the values (20, 30, 40, 50, 80, 79). It is a valid statement.
+        <br><br>
+        Statement 2 (print(tup[3]+50)): This statement accesses the element at index 3 in the tuple tup, which is 50, and then adds 50 to it, resulting in 100. It is a valid statement.
+        <br><br>
+        Statement 3 (print(max(tup))): This statement uses the max() function to find the maximum value in the tuple tup, which is 80, and then prints it. It is a valid statement.
+        <br><br>
+        Statement 4 (tup[4]=80): This statement tries to assign a new value (80) to the element at index 4 in the tuple tup. However, tuples are immutable in Python, which means their elements cannot be changed after creation. Therefore, this statement will raise an error during execution.
+        <br>br
+        So, the statement that would give an error during execution is d. Statement 4.
+    </p>
+    </div>
+    <button class="endbut"><a href="q10.html">Question 10</a></button>
+</body>
+
+</html>

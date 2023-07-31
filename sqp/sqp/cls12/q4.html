@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="qno">Question Number 4</h1>
+    <span class="section">Section A</span>
+    <span class="marks">1 Marks</span>
+    <br>
+    <div class="question">
+        <p>Select the correct output of the code:</p>
+        <div class="qbox"><code class="qcode">
+        s="Python is fun" <br>
+         l = s.split() <br>
+         s_new = "-".join([l[0].upper(), l[1], l[2].capitalize()]) 
+         <br>print (s_new)
+    </code></div>
+    </div>
+    <div class="option">
+        <p>a. PYTHON-IS-Fun</p>
+        <p>b. PYTHON-is-Fun</p>
+        <p>c. Python-is-fun</p>
+        <p>d. PYTHON-Is -Fun</p>
+    </div>
+    <span class="answord">Answer</span>
+    <div class="boxans"><code class="anstxt">
+        b. "PYTHON-is-Fun"
+    </code></div>
+
+    <span class="answord">Explanation</span>
+
+    <p>
+        `s` is the given string: "Python is fun". <br>
+        `l = s.split()` splits the string `s` into a list of words using the default space as the separator, and the
+        resulting list `l` becomes `["Python", "is", "fun"]`. <br>
+        `l[0].upper()` takes the first word from the list `l`, which is "Python", and uses the `upper()` method to
+        convert it to uppercase, resulting in "PYTHON". <br>
+        `l[1]` takes the second word from the list `l`, which is "is". <br>
+        `l[2].capitalize()` takes the third word from the list `l`, which is "fun", and uses the `capitalize()` method
+        to capitalize the first letter, resulting in "Fun".
+        <br><br>
+        Finally, the `join()` method is used to concatenate the modified elements of the list `l` using a hyphen (`-`)
+        as the separator. The resulting string `s_new` will be:
+        <br><br>
+        "PYTHON-is-Fun"
+    </p>
+    </div>
+    <button class="endbut"><a href="q5.html">Question 5</a></button>
+</body>
+
+</html>

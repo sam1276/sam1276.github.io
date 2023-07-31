@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="qno">Question Number 10</h1>
+    <span class="section">Section A</span>
+    <span class="marks">1 Marks</span>
+    <br>
+    <div class="question">
+        <p>What possible outputs(s) will be obtained when the following code is executed?</p>
+        <div class="qbox"><code class="qcode">
+        import random <br>
+        myNumber=random.randint(0,3) <br>
+        COLOR=["YELLOW","WHITE","BLACK","RED"] <br>
+        for I in range(1,myNumber): <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; print(COLOR[I],end="*") <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; print()
+    </code></div>
+    </div>
+    <div class="option">
+        <p>a.
+            RED* <br>
+            &nbsp;&nbsp; WHITE* <br>
+            &nbsp;&nbsp; BLACK*
+        </p>
+        <p>b.
+            WHITE* <br>
+            &nbsp;&nbsp; BLACK* <br>
+        </p>
+        <p>c.
+            WHITE* WHITE* <br>
+            &nbsp;&nbsp; BLACK* BLACK*
+        </p>
+        <p>d.
+            YELLOW* <br>
+            &nbsp;&nbsp; WHITE*WHITE* <br>
+            &nbsp;&nbsp; BLACK* BLACK* BLACK*
+        </p>
+    </div>
+    <span class="answord">Answer</span>
+    <div class="boxans"><code class="anstxt">
+        b. WHITE* <br>
+        &nbsp;&nbsp;&nbsp;BLACK*
+    </code></div>
+
+    <span class="answord">Explanation</span>
+
+    <p>
+
+        The code begins by importing the random module and generates a random integer myNumber between 0 and 3
+        (inclusive) using random.randint(0, 3). <br> <br>
+        The COLOR list contains four elements: ["YELLOW", "WHITE", "BLACK", "RED"]. <br><br>
+        The for loop runs from 1 (inclusive) to myNumber (exclusive). <br>
+        Since myNumber can be 0, 1, or 2, the loop will iterate at most two times. <br><br>
+        In the first iteration, I will be 1, and COLOR[I] will be "WHITE". So, it will print "WHITE*" followed by a new
+        line. <br><br>
+        In the second iteration (if myNumber is 2), I will be 2, and COLOR[I] will be "BLACK". So, it will print
+        "BLACK*" followed by a new line.
+    </p>
+    <span style="font-size: 1.5em;">Note:</span> <span style="font-size: 1.2em;">The option "a." provided in the question is incorrect because it includes "RED*," which is not part of the possible output. The correct answer is "a." without "RED*."</span>
+    </div>
+    <button class="endbut"><a href="q11.html">Question 11</a></button>
+</body>
+
+</html>

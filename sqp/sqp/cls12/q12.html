@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="qno">Question Number 12</h1>
+    <span class="section">Section A</span>
+    <span class="marks">1 Marks</span>
+    <br>
+    <div class="question"><p>
+        Consider the code given below: 
+    </p>
+    <div class="qbox"><code class="qcode">
+        b = 100 <br>
+        def test(a): <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;______________ # missing statement <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;b=b+a <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;print(a,b)
+    </code></div>
+    <p>Which of the following statements should be given in the blank for #Missing Statement, if the output produced is 110?
+        </p>
+    </div>
+        <div class="option">
+        <p>a. global a <br>
+            b. global b=100 <br>
+            c. global b <br>
+            d. global a=100</p>
+        </div>
+    <span class="answord">Answer</span>
+    <div class="boxans"><code class="anstxt">
+        c. global b
+    </code></div>
+    
+        <span class="answord" >Explanation</span>
+        
+        <p>
+            In the given code, the function test(a) is defined to take an argument a. However, inside the function, the variable b is being used as well, and it is not defined locally within the function.
+<br><br>
+To modify the global variable b inside the function test(a), we need to declare it as a global variable using the global keyword. By adding the statement global b in the blank, we inform the function that b refers to the global variable defined outside the function.
+<br> <br>
+Here's the complete code:
+        </p>
+        <div class="qbox">
+            <code class="qcode">
+                b = 100 <br>
+                def test(a): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;global b # missing statement <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;b=b+a <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(a,b)  
+            </code>
+        </div>
+        <p>
+            With the global b statement, the function will recognize that b is the global variable, and when test(10) is called, it will update the global variable b by adding 10 to its current value of 100, resulting in b becoming 110, and the function will print the output as 10 110.
+        </p>
+    </div>
+
+
+    <button class="endbut"><a href="q13.html">Question 13</a></button></body>
+</html>
