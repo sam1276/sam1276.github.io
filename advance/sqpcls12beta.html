@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Accordion Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h2 class="qnum">Question 1</h2>
+            </div>
+            <div class="accordion-content">
+                <div>
+                    <!-- <h1 class="qno">Question Number 1</h1> -->
+                    <span class="section">Section A</span>
+                    <span class="marks">1 Marks</span>
+                    <br> <br>
+                    <div class="question">
+                        <p>State True or False: <br> “In a Python program, if a break statement is given in a nested
+                            loop, it terminates the execution of all loops in one go.”</p>
+                    </div>
+                    <span class="answord">Answer</span>
+                    <div class="boxans"><code class="anstxt">
+        False.
+    </code></div>
+
+                    <span class="answord">Explanation</span>
+
+                    <p>In Python, if a `break` statement is given in a nested loop (a loop inside another loop), it will
+                        only terminate the innermost loop in which the `break` statement is placed. The outer loop(s)
+                        will continue their execution as usual.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 2</h2>
+        </div>
+        <div class="accordion-content">
+            <div>
+                <!-- <h1 class="qno">Question Number 2</h1> -->
+                <span class="section">Section A</span>
+                <span class="marks">1 Marks</span>
+                <br><br>
+                <div class="question">
+                    <p>In a table in MYSQL database, an attribute A of datatype varchar(20)
+                        has the value “Keshav”. The attribute B of datatype char(20) has value
+                        “Meenakshi”. How many characters are occupied by attribute A and
+                        attribute B?</p>
+                </div>
+                <div class="option">
+                    <p>a. 20,6</p>
+                    <p>b. 6,20</p>
+                    <p>c. 9,6</p>
+                    <p>d. 6,9</p>
+                </div>
+                <span class="answord">Answer</span>
+                <div class="boxans"><code class="anstxt">
+        c. 9,6
+    </code></div>
+
+                <span class="answord">Explanation</span>
+
+                <p>
+                    Attribute A (VARCHAR): Stores "Keshav" (6 characters).<br>
+                    Attribute B (CHAR): Stores "Meenakshi" (20 characters, padded with spaces).<br>Hence, the correct
+                    option is: c. 9,6</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 3</h2>
+        </div>
+        <div class="accordion-content">
+            <div>
+
+                <!-- <h1 class="qno">Question Number 3</h1> -->
+                <span class="section">Section A</span>
+                <span class="marks">1 Marks</span>
+                <br><br>
+                <div class="question"> <p>What will be the output of the following statement: <br>
+                    print(3-2**2**3+99/11)
+                    </p>
+                </div>
+                    <div class="option">
+                    <p>a. 244</p>
+                    <p>b. 244.0</p>
+                    <p>c. -244.0</p>
+                    <p>d. Error</p>
+                    </div>
+                <span class="answord">Answer</span>
+                <div class="boxans"><code class="anstxt">
+                    c. -244.0
+                </code></div>
+                
+                    <span class="answord" >Explanation</span>
+                    
+                    <p>To calculate the output of the given statement, follow the order of operations (PEMDAS/BODMAS): <br><br>
+            
+                        Exponentiation: 2**3 evaluates to 8. <br>
+                        Exponentiation: 2**8 evaluates to 256. <br>
+                        Subtraction: 3 - 256 evaluates to -253. <br>
+                        Division: 99/11 evaluates to 9. <br>
+                        Addition: -253 + 9 evaluates to -244. <br><br>
+                        So, the output of the statement print(3-2**2**3+99/11) is -244.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 4</h2>
+        </div>
+        <div class="accordion-content">
+<div>
+    <span class="section">Section A</span>
+    <span class="marks">1 Marks</span>
+    <br><br>
+    <div class="question">
+        <p>Select the correct output of the code:</p>
+        <div class="qbox"><code class="qcode">
+        s="Python is fun" <br>
+         l = s.split() <br>
+         s_new = "-".join([l[0].upper(), l[1], l[2].capitalize()]) 
+         <br>print (s_new)
+    </code></div>
+    </div>
+    <div class="option">
+        <p>a. PYTHON-IS-Fun</p>
+        <p>b. PYTHON-is-Fun</p>
+        <p>c. Python-is-fun</p>
+        <p>d. PYTHON-Is -Fun</p>
+    </div>
+    <span class="answord">Answer</span>
+    <div class="boxans"><code class="anstxt">
+        b. "PYTHON-is-Fun"
+    </code></div>
+
+    <span class="answord">Explanation</span>
+
+    <p>
+        `s` is the given string: "Python is fun". <br>
+        `l = s.split()` splits the string `s` into a list of words using the default space as the separator, and the
+        resulting list `l` becomes `["Python", "is", "fun"]`. <br>
+        `l[0].upper()` takes the first word from the list `l`, which is "Python", and uses the `upper()` method to
+        convert it to uppercase, resulting in "PYTHON". <br>
+        `l[1]` takes the second word from the list `l`, which is "is". <br>
+        `l[2].capitalize()` takes the third word from the list `l`, which is "fun", and uses the `capitalize()` method
+        to capitalize the first letter, resulting in "Fun".
+        <br><br>
+        Finally, the `join()` method is used to concatenate the modified elements of the list `l` using a hyphen (`-`)
+        as the separator. The resulting string `s_new` will be:
+        <br><br>
+        "PYTHON-is-Fun"
+    </p>
+    </div>
+</div>        </div>
+    </div>
+
+
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 5</h2>
+        </div>
+        <div class="accordion-content">
+
+<div>
+    <span class="section">Section A</span>
+    <span class="marks">1 Marks</span>
+    <br><br>
+    <div class="question">
+        <p>In MYSQL database, if a table, Alpha has degree 5 and cardinality 3, and
+            another table, Beta has degree 3 and cardinality 5, what will be the degree
+            and cardinality of the Cartesian product of Alpha and Beta?</p>
+    </div>
+    <div class="option">
+        <p>a. 5,3</p>
+        <p>b. 8,15</p>
+        <p>c. 3,5</p>
+        <p>d. 15,8</p>
+    </div>
+    <span class="answord">Answer</span>
+    <div class="boxans"><code class="anstxt">
+        b. 8,15
+    </code></div>
+
+    <span class="answord">Explanation</span>
+
+    <p>
+        The degree of the Cartesian product of two tables is the sum of the degrees of the original tables. In this case, the degree will be 5 + 3 = 8. <br>
+<br>
+        The cardinality of the Cartesian product of two tables is the product of the cardinalities of the original tables. In this case, the cardinality will be 3 * 5 = 15. <br>
+        <br>
+        So, the degree of the Cartesian product is 8, and the cardinality is 15. <br>
+        
+    </p>
+    </div>
+</div>       
+
+</div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 6</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 7</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 8</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 9</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 11</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 12</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 13</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 14</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 15</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 16</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 17</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 18</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 19</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 20</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 21</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 23</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 24</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 25</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 26</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 27</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 28</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 29</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 30</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 31</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 32</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 33</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-header">
+            <h2 class="qnum">Question 34</h2>
+        </div>
+        <div class="accordion-content">
+            <p>Answer to Question 2 goes here.</p>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
