@@ -24,13 +24,17 @@
         <p>c. 3,5</p>
         <p>d. 15,8</p>
     </div>
-    <span class="answord">Answer</span>
-    <div class="boxans"><code class="anstxt">
+<span class="answord">
+        <button class="ansButton" onclick="ToggleAnswer(this)">Show Answer</button>
+    </span>
+    <div class="ansr" style="display: none;">    <div class="boxans"><code class="anstxt">
         b. 8,15
     </code></div>
 
-    <span class="answord">Explanation</span>
-
+<span class="expword">
+        <button class="expButton" onclick="ToggleExplanation(this)">Show Explanation</button>
+    </span>
+        <div class="expp" style="display: none;">
     <p>
         The degree of the Cartesian product of two tables is the sum of the degrees of the original tables. In this case, the degree will be 5 + 3 = 8. <br>
 <br>
@@ -39,7 +43,10 @@
         So, the degree of the Cartesian product is 8, and the cardinality is 15. <br>
         
     </p>
+    </div>   
     </div>
+    </div>
+
     <button class="endbut"><a href="q6.html">Question 6</a></button>
 </body>
 
