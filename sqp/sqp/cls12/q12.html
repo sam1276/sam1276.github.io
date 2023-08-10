@@ -30,13 +30,18 @@
             c. global b <br>
             d. global a=100</p>
         </div>
-    <span class="answord">Answer</span>
-    <div class="boxans"><code class="anstxt">
+<span class="answord">
+        <button class="ansButton" onclick="ToggleAnswer(this)">Show Answer</button>
+    </span>
+    <div class="ansr" style="display: none;">    <div class="boxans"><code class="anstxt">
         c. global b
     </code></div>
     
-        <span class="answord" >Explanation</span>
-        
+<span class="expword">
+        <button class="expButton" onclick="ToggleExplanation(this)">Show Explanation</button>
+    </span>
+        <div class="expp" style="display: none;">
+            
         <p>
             In the given code, the function test(a) is defined to take an argument a. However, inside the function, the variable b is being used as well, and it is not defined locally within the function.
 <br><br>
@@ -56,6 +61,8 @@ Here's the complete code:
         <p>
             With the global b statement, the function will recognize that b is the global variable, and when test(10) is called, it will update the global variable b by adding 10 to its current value of 100, resulting in b becoming 110, and the function will print the output as 10 110.
         </p>
+    </div>
+    </div>
     </div>
 
 
