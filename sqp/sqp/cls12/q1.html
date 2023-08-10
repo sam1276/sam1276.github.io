@@ -12,14 +12,21 @@
     <span class="marks">1 Marks</span>
     <br>
     <div class="question"><p>State True or False: <br> “In a Python program, if a break statement is given in a nested loop, it terminates the execution of all loops in one go.”</p></div>
-    <span class="answord">Answer</span>
-    <div class="boxans"><code class="anstxt">
+    <span class="answord">
+        <button class="ansButton" onclick="ToggleAnswer(this)">Show Answer</button>
+    </span>
+    <div class="ansr" style="display: none;">
         False.
     </code></div>
     
-        <span class="answord" >Explanation</span>
-        
+<span class="expword">
+        <button class="expButton" onclick="ToggleExplanation(this)">Show Explanation</button>
+    </span>
+        <div class="expp" style="display: none;">
+            
         <p>In Python, if a `break` statement is given in a nested loop (a loop inside another loop), it will only terminate the innermost loop in which the `break` statement is placed. The outer loop(s) will continue their execution as usual.</p>
     </div>
+    </div>
+
     <button class="endbut"><a href="q2.html">Question 2</a></button></body>
 </html>
