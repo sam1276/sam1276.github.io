@@ -27,18 +27,26 @@
         <p>c. ceieP</p>
         <p>d. yndsr</p>
     </div>
-    <span class="answord">Answer</span>
+<span class="answord">
+        <button class="ansButton" onclick="ToggleAnswer(this)">Show Answer</button>
+    </span>
+    <div class="ansr" style="display: none;">
     <div class="boxans"><code class="anstxt">
         c. ceieP
     </code></div>
 
-    <span class="answord">Explanation</span>
+    <span class="expword">
+        <button class="expButton" onclick="ToggleExplanation(this)">Show Explanation</button>
+    </span>
+        <div class="expp" style="display: none;">
 
     <p>
         `pride="#G20 Presidency"`: Assigns the string "#G20 Presidency" to the variable `pride`. <br>
 `pride[-2:2:-2]`: Slicing from the second-to-last character ("c") to the second character ("e") in reverse order with a step of -2. <br>
 Output: The selected characters are "ce", and then "P" is added as it is. The final output is "ceieP".
     </p>
+    </div>
+    </div>
     </div>
     <button class="endbut"><a href="q9.html">Question 9</a></button>
 </body>
