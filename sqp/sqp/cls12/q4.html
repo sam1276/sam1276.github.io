@@ -28,13 +28,19 @@
         <p>c. Python-is-fun</p>
         <p>d. PYTHON-Is -Fun</p>
     </div>
-    <span class="answord">Answer</span>
-    <div class="boxans"><code class="anstxt">
+<span class="answord">
+        <button class="ansButton" onclick="ToggleAnswer(this)">Show Answer</button>
+    </span>
+    <div class="ansr" style="display: none;">   
+        <div class="boxans"><code class="anstxt">
         b. "PYTHON-is-Fun"
     </code></div>
 
-    <span class="answord">Explanation</span>
-
+<span class="expword">
+        <button class="expButton" onclick="ToggleExplanation(this)">Show Explanation</button>
+    </span>
+        <div class="expp" style="display: none;">
+            
     <p>
         `s` is the given string: "Python is fun". <br>
         `l = s.split()` splits the string `s` into a list of words using the default space as the separator, and the
@@ -50,6 +56,8 @@
         <br><br>
         "PYTHON-is-Fun"
     </p>
+    </div>
+    </div>
     </div>
     <button class="endbut"><a href="q5.html">Question 5</a></button>
 </body>
