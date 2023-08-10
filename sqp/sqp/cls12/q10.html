@@ -44,13 +44,19 @@
             &nbsp;&nbsp; BLACK* BLACK* BLACK*
         </p>
     </div>
-    <span class="answord">Answer</span>
+    <span class="answord">
+        <button class="ansButton" onclick="ToggleAnswer(this)">Show Answer</button>
+    </span>
+    <div class="ansr" style="display: none;">
     <div class="boxans"><code class="anstxt">
         b. WHITE* <br>
         &nbsp;&nbsp;&nbsp;BLACK*
     </code></div>
 
-    <span class="answord">Explanation</span>
+  <span class="expword">
+        <button class="expButton" onclick="ToggleExplanation(this)">Show Explanation</button>
+    </span>
+        <div class="expp" style="display: none;">
 
     <p>
 
@@ -65,6 +71,8 @@
         "BLACK*" followed by a new line.
     </p>
     <span style="font-size: 1.5em;">Note:</span> <span style="font-size: 1.2em;">The option "a." provided in the question is incorrect because it includes "RED*," which is not part of the possible output. The correct answer is "a." without "RED*."</span>
+    </div>
+    </div>
     </div>
     <button class="endbut"><a href="q11.html">Question 11</a></button>
 </body>
