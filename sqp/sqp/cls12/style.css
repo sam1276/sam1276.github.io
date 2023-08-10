@@ -72,7 +72,7 @@ p {
     border: none;
     border-radius: 5px;
     background-color: #3498db;
-    color: #fdf6f6;
+    color: #ececec;
     font-size: 16px;
     font-weight: bold;
     text-align: right;
@@ -98,7 +98,7 @@ p {
     justify-content: center;
 }
 .question{
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 .anstxt{
     padding-top: 5px;
@@ -141,4 +141,37 @@ p {
         background: #272822;
         align-items: center;
         margin-bottom: 50px;
+}
+.ansButton {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ansButton:hover {
+    background-color: #2980b9;
+}
+
+.expButton {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.expButton:hover {
+    background-color: #2980b9;
 }
