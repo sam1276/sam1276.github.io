@@ -1,12 +1,10 @@
+/* General Styles */
 body {
     position: relative;
-    left: 10%;
-    max-width: 80%;
-    min-height: 100vh;
-    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
     background: #f0f0f0;
-    margin-bottom: 50px;
-    font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 }
 
 h1 {
@@ -18,23 +16,22 @@ p {
 }
 
 .littsp {
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0;
 }
 
 .box {
-    position: relative;
-
     padding: 10px 30px;
-
     border: solid #272822;
     border-radius: 0.3em;
     background: #272822;
     align-items: center;
 }
-.synt {
+
+.synt,
+.jsas {
     padding-top: 5px;
     color: aliceblue;
-    text-shadow: 0 1px rgba(0,0,0,.3);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     font-family: "Courier New", monospace;
     font-weight: bold;
     font-size: 1.2em;
@@ -44,31 +41,17 @@ p {
 .subhd {
     font-size: x-large;
     font-weight: bold;
-
 }
 
-.jsas {
-    padding-top: 5px;
-    color: aliceblue;
-    text-shadow: 0 1px rgba(0,0,0,.3);
-    font-family: "Courier New", monospace;
-    font-weight: bold;
-    font-size: 1.2em;
-    line-height: 1.5;
-    
-}
-
-
-.endbut {
+/* Button Styles */
+.nextbut {
+    float: right;
     margin-top: 30px;
-    position: relative;
-    left: 87%;
-    display: inline-block;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     background-color: #3498db;
-    color: #fff;
+    color: #fdf6f6;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -78,24 +61,75 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.endbut:hover {
+.nextbut:hover {
     background-color: #2980b9;
 }
-.center {
-    padding-top: 10px;
-    margin-top: 50px;
-    /* background-color: #b8d6f4; */
+
+.prebut {
+    float: left;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fdf6f6;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
-.cent {
+.nextbut:hover {
+    background-color: #2980b9;
+}
+
+/* Text Styles */
+.para-heading {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.h3em {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #7b7a7a;
-    text-decoration: none;
-    color: aliceblue;
-    margin-top: 10px;
+    font-size: 3em;
 }
-.cent:hover{
-    background-color: #494949;
+
+.exmp {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    margin-bottom: 50px;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 90%;
+    }
+
+    .box {
+        padding: 10px;
+    }
+
+    .prebut {
+        float: left;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nextbut {
+        float: right;
+        margin-top: 20px;
+        text-align: center;
+    }
 }
