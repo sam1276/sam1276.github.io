@@ -1,12 +1,22 @@
-/* General Styles */
 body {
+   
     position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
+    left: 10%;
+    max-width: 80%;
+    min-height: 100vh;
+    margin-top: 100px;
+    padding-bottom: 100px;
     background: #f0f0f0;
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    margin-bottom: 50px;
+    font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
 }
-
+a{
+    text-decoration: none;
+    color: #696969;
+}
+a:hover{
+    color: #000000;
+}
 h1 {
     margin-top: 10px;
 }
@@ -16,22 +26,21 @@ p {
 }
 
 .littsp {
-    margin: 5px 0;
+    margin: 5px 0px 5px 0px;
 }
 
 .box {
+    position: relative;
     padding: 10px 30px;
     border: solid #272822;
     border-radius: 0.3em;
     background: #272822;
     align-items: center;
 }
-
-.synt,
-.jsas {
+.synt {
     padding-top: 5px;
     color: aliceblue;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px rgba(0,0,0,.3);
     font-family: "Courier New", monospace;
     font-weight: bold;
     font-size: 1.2em;
@@ -41,9 +50,20 @@ p {
 .subhd {
     font-size: x-large;
     font-weight: bold;
+
 }
 
-/* Button Styles */
+.jsas {
+    padding-top: 5px;
+    color: aliceblue;
+    text-shadow: 0 1px rgba(0,0,0,.3);
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.5;
+    
+}
+
 .nextbut {
     float: right;
     margin-top: 30px;
@@ -82,59 +102,11 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.nextbut:hover {
+.prebut:hover {
     background-color: #2980b9;
 }
 
-/* Text Styles */
-.para-heading {
-    font-weight: bold;
-    font-size: 1.3em;
-}
 
-.h3em {
-    display: flex;
-    justify-content: center;
-    font-size: 3em;
-}
-
-.exmp {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-a {
-    text-decoration: none;
-}
-
-div {
-    margin-bottom: 50px;
-}
-
-/* Responsive Media Queries */
-@media screen and (max-width: 768px) {
-    body {
-        max-width: 90%;
-    }
-
-    .box {
-        padding: 10px;
-    }
-
-    .prebut {
-        float: left;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .nextbut {
-        float: right;
-        margin-top: 20px;
-        text-align: center;
-    }
-}
-
-}
 .section{
     font-size: 1em;
     float: left;
