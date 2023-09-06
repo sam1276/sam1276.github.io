@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="h3em">
+            Network Switching
+        </h1>
+        <p>Network switching is the process of forwarding data packets within a computer network. Switches are devices
+            that do this by using MAC addresses to determine where to send data. They can create virtual LANs,
+            prioritize traffic, and offer redundancy for network reliability. This fundamental networking concept
+            enables devices in a network to communicate efficiently.
+
+        </p>
+
+    </div>
+    <div>
+        <p>
+            A communication system may include number of switches and nodes. At broad level, switching can be divided
+            into two major categories: <br>
+            <span class="parash">
+                Connectionless :
+            </span>
+            The data is forwarded on behalf of forwarding tables. No previous handshaking is required and
+            acknowledgements are optional.
+            <br>
+            <span class="parash">
+                Connection Oriented:
+            </span>
+            Before switching data to be forwarded to destination, there is a need to pre-establish circuit along the
+            path between both endpoints. Data is then forwarded on that circuit. After the transfer is completed,
+            circuits can be kept for future use or can be turned down immediately.
+        </p>
+    </div>
+    <div>
+        <h1>
+            Circuit Switching
+        </h1>
+        <p>
+            Circuit switching is a communication method where two nodes use a dedicated path for their communication.
+            This path is predetermined, allowing only the specified data to travel through it. To facilitate data
+            transfer in circuit switching, a dedicated circuit must first be established.
+        </p>
+        <p>
+            Circuits can be permanent or temporary. Applications which use circuit switching may have to go through
+            three phases:
+            <br><br>
+
+            <span class="parash">◍ Establish a circuit</span>
+            <br>
+            <span class="parash">◍ Transfer the data</span>
+            <br>
+            <span class="parash">◍ Disconnect the circuit</span>
+            <br><br>
+            Circuit switching was primarily developed for voice applications, with the telephone system serving as a
+            prime example. When a user wants to make a call, the network establishes a virtual, dedicated path between
+            the caller and the recipient before the call can take place.
+        </p>
+        <p>
+        <h2>Merits (Advantages) of Circuit Switching:</h2>
+
+        <span class="parash">Guaranteed Quality: </span> Circuit switching offers consistent and guaranteed quality of
+        service for real-time applications like voice calls, ensuring minimal delay, low jitter, and no packet loss
+        during the call.
+        <br><br>
+
+        <span class="parash">Predictable Bandwidth: </span> The allocated bandwidth remains constant throughout the
+        call, making it suitable for applications where a fixed, reliable data rate is required.
+        <br><br>
+
+        <span class="parash">Simple and Reliable: </span> Circuit switching is straightforward to implement and has been
+        a reliable technology for voice communication over traditional telephone networks.
+        <br><br>
+
+        <span class="parash">Low Overhead: </span> There is relatively low overhead in terms of packet headers and
+        routing, as the path is established once and used exclusively for the duration of the call.
+
+        <h2>
+            Demerits (Disadvantages) of Circuit Switching:
+        </h2>
+        <span class="parash">Inefficient Resource Usage: </span> Circuit switching dedicates resources (e.g., bandwidth
+        and switching equipment) for
+        the entire call, even when there are silent periods or when data transmission is not continuous, leading to
+        inefficient use of network resources.
+        <br><br>
+
+        <span class="parash">Limited Scalability: </span> Due to the need to reserve dedicated circuits,
+        circuit-switched networks are less scalable
+        than packet-switched networks, making it challenging to support a large number of simultaneous connections.
+        <br><br>
+
+        <span class="parash">Not Suitable for Data: </span> Circuit switching is less efficient for data transmission,
+        especially bursty or
+        non-real-time traffic, because the fixed bandwidth allocation may not be fully utilized.
+        <br><br>
+
+        <span class="parash">Costly: </span> The dedicated circuit approach can be costly, especially when resources are
+        reserved for the entire
+        duration of a call, even during periods of inactivity.
+        <br><br>
+
+        <span class="parash">Not Well-Suited for Modern Applications: </span> With the rise of data-centric and
+        on-demand services, circuit switching
+        is less suitable for today's diverse communication needs compared to packet switching, which can adapt to
+        varying data requirements.
+        </p>
+        <p>
+            In summary, circuit switching provides guaranteed quality for real-time communication like voice calls but
+            is less efficient and scalable compared to modern packet switching, which is better suited for a wide range
+            of data services and applications.
+        </p>
+    </div>
+    <div>
+        <h1>
+            Message Switching
+        </h1>
+        <p>
+
+            Message switching is a communication method where messages are stored, forwarded, and delivered from sender
+            to recipient through a central hub or relay stations, rather than using a dedicated or continuous path like
+            circuit switching. It was commonly used in older telecommunications systems for sending asynchronous
+            messages, such as telegrams and telex.
+
+        </p>
+        <p>
+            Message switching works by storing messages at various points in the network and forwarding them to their
+            destination through a central hub or relay stations. Here's a simplified step-by-step explanation of how it
+            works:
+            <br><br>
+            <span class="parash">Message Creation:</span> A sender creates a message, which could be in the form of text
+            or other data.
+            <br><br>
+            <spam class="parash">Message Storage:</spam> The message is stored at the sender's location or at a local
+            node until it's ready to be transmitted.
+
+            <br><br>
+            <spam class="parash">Transmission to Central Hub:</spam> Instead of establishing a dedicated connection, the
+            message is sent to a central switching or routing hub, often through intermediate relay stations or nodes.
+
+            <br><br>
+            <spam class="parash">Routing and Forwarding:</spam> At the central hub, the message is examined, and its
+            destination is determined. The hub may use manual or automated methods to figure out how to route the
+            message to the appropriate outgoing channel or line.
+
+            <br><br>
+            <spam class="parash">Transmission to Recipient:</spam> The message is then sent from the central hub to the
+            recipient's location, again often passing through intermediate relay stations or nodes.
+
+            <br><br>
+            <spam class="parash">Message Delivery:</spam> Finally, the message is delivered to the recipient, who can
+            read or process it
+        </p>
+        <p>
+        <h2>
+            Merits (Advantages) of Message Switching:
+        </h2>
+        <span class="parash">Flexibility: </span> Message switching is suitable for asynchronous communication, allowing
+        messages to be sent and
+        received at different times, making it versatile for various types of communication needs.
+        <br><br>
+        <span class="parash">Reliability: </span> Messages are stored and forwarded, reducing the risk of data loss. If
+        a network connection is
+        temporarily unavailable, the message can be held until it can be transmitted.
+        <br><br>
+        <span class="parash">Simple Routing: </span> Routing decisions can be made centrally at a hub, making it easier
+        to manage and control message
+        traffic.
+        <br><br>
+
+        <span class="parash">Suitable for Non-Real-Time Communication: </span> Message switching is well-suited for
+        communication where real-time
+        delivery is not critical, such as sending letters, emails, or written messages.
+        </p>
+        <p>
+        <h2>
+            Demerits (Disadvantages) of Circuit Switching:
+        </h2>
+        <br><br>
+        <span class="parash">Slower Speed:</span> Message switching is typically slower than circuit switching or modern
+        packet switching methods, as messages may need to wait at various points in the network before being forwarded.
+
+        <br><br>
+        <span class="parash">Inefficient for Real-Time Communication:</span> It is not suitable for real-time
+        applications like voice or video calls, where low latency and continuous communication are essential.
+
+        <br><br>
+        <span class="parash">Limited Scalability:</span> As message traffic grows, managing and routing messages through
+        a central hub or relay stations can become inefficient and less scalable.
+
+        <br><br>
+        <span class="parash">Complexity for Large Networks:</span> In large networks, the complexity of message routing
+        and storage can increase significantly, potentially leading to delays and inefficiencies.
+
+        <br><br>
+        <span class="parash">Obsolete Technology:</span> Message switching has largely been replaced by more efficient
+        and faster communication methods like packet switching for modern communication needs.
+        </p>
+        <p>
+            In summary, message switching offers reliability and flexibility for asynchronous communication but may be
+            too slow and inefficient for real-time applications and large-scale networks, making it less relevant in
+            today's technology landscape.
+        </p>
+
+    </div>
+    <div>
+        <h1>
+            Packet Switching
+        </h1>
+        <p>
+            In summary, message switching offers reliability and flexibility for asynchronous communication but may be
+            too slow and inefficient for real-time applications and large-scale networks, making it less relevant in
+            today's technology landscape.
+        </p>
+        <p>
+            <span class="parash">Data Packetization:</span> When a sender wants to transmit data, it is divided into
+            small packets. Each packet
+            typically contains a portion of the original data, along with control information such as source and
+            destination addresses.
+            <br><br>
+            <span class="parash">Routing:</span> These packets are then sent into the network. Routers and switches in
+            the network examine the
+            destination address on each packet and determine the best path to forward it to reach its destination.
+            Unlike circuit switching, where a dedicated path is established, each packet in packet switching can take a
+            different route through the network.
+            <br><br>
+            <span class="parash">Independent Transmission:</span> Packets are sent independently and may arrive at their
+            destination out of order or
+            via different paths. This is because they can travel through different routes in the network, depending on
+            network congestion and other factors.
+            <br><br>
+            <span class="parash">Reassembly:</span> When the packets reach their destination, they are reassembled into
+            the original data stream
+            based on the information contained in the packet headers.
+        </p>
+        <p>
+        <h2>
+            Merits (Advantages) of Packet Switching:
+        </h2>
+        <p>
+            <span class="parash">Efficient Resource Utilization:</span> Packet switching is highly efficient because it
+            allows multiple users to
+            share the same network resources. Bandwidth is allocated dynamically based on demand, reducing waste and
+            optimizing network utilization.
+            <br><br>
+            <span class="parash">Scalability:</span> Packet switching networks can easily scale to accommodate a large
+            number of users and devices,
+            making them suitable for both small-scale and large-scale networks.
+            <br><br>
+            <span class="parash">Resilience and Redundancy:</span> Packet-switched networks are resilient because if one
+            path is congested or
+            unavailable, packets can take alternative routes to reach their destination. This redundancy enhances
+            network reliability.
+            <br><br>
+            <span class="parash">Versatility:</span> Packet switching can handle various types of data, including text,
+            images, video, and more. It
+            is adaptable to diverse communication needs and data types.
+            <br><br>
+            <span class="parash">Cost-Effective:</span> Due to efficient resource utilization and scalability, packet
+            switching is often more
+            cost-effective than circuit switching for data transmission.
+            <br><br>
+            <span class="parash">Supports Prioritization:</span> Quality of Service (QoS) mechanisms can be implemented
+            in packet-switched networks
+            to prioritize certain types of traffic, ensuring better performance for critical applications like VoIP or
+            video streaming.
+        </p>
+        <p>
+        <h2>
+            Demerits (Disadvantages) of Packet Switching:
+        </h2>
+        <span class="parash">Potential for Delay:</span> Packet switching can introduce variable delays as packets may
+        take different routes and
+        experience congestion in the network. This delay may not be suitable for real-time applications that require low
+        latency.
+        <br><br>
+        <span class="parash">Packet Loss:</span> In cases of network congestion or errors, packets can be dropped,
+        leading to packet loss. While
+        protocols like TCP (Transmission Control Protocol) can recover lost packets, it can impact the quality of some
+        applications.
+        <br><br>
+        <span class="parash">Complexity:</span> Packet switching networks can be more complex to manage and configure
+        compared to circuit-switched
+        networks, especially in large-scale deployments.
+        <br><br>
+        <span class="parash">Quality Variability:</span> The quality of service in packet-switched networks can vary
+        depending on network
+        conditions, which may not be acceptable for applications that require consistent and guaranteed performance.
+        <br><br>
+        <span class="parash">Overhead:</span> Packet headers contain control information, which adds overhead to each
+        packet. This overhead is
+        relatively small but can become significant in situations with many small packets.
+        <br><br>
+        <span class="parash">Security Challenges:</span> Packet-switched networks are vulnerable to various security
+        threats, such as packet
+        sniffing, Distributed Denial of Service (DDoS) attacks, and unauthorized access.
+        </p>
+        <p>
+            In summary, packet switching offers efficiency, scalability, and versatility but may introduce variable delays and packet loss. The choice between packet switching and other methods depends on the specific communication needs and priorities of a given network or application.
+        </p>
+    </div>
+
+</body>
+
+</html>

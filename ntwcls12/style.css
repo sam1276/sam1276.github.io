@@ -1,0 +1,172 @@
+/* General Styles */
+*{
+    margin-bottom: 50px;
+}
+body {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #f0f0f0;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+p {
+    font-size: large;
+}
+
+.littsp {
+    margin: 5px 0;
+}
+
+.box {
+    padding: 10px 30px;
+    border: solid #272822;
+    border-radius: 0.3em;
+    background: #272822;
+    align-items: center;
+}
+
+.synt,
+.jsas {
+    padding-top: 5px;
+    color: aliceblue;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.subhd {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.nextbut {
+    float: right;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fdf6f6;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.nextbut:hover {
+    background-color: #2980b9;
+}
+
+.prebut {
+    float: left;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fdf6f6;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.nextbut:hover {
+    background-color: #2980b9;
+}
+
+.para-heading {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.h3em {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    margin-bottom: 70px;
+}
+
+.exmp {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:visited {
+    color: blue;
+}
+
+div {
+    margin-bottom: 50px;
+}
+.parash{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+
+
+
+
+.custom-table {
+    border-collapse: collapse;
+    
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+  
+  .custom-table th, .custom-table td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .custom-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .custom-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 90%;
+    }
+
+    .box {
+        padding: 10px;
+    }
+
+    .prebut {
+        float: left;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nextbut {
+        float: right;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
