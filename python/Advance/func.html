@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="h3em">Functions</h1>
+    </div>
+    <div>
+        <h1>What is a Function in python</h1>
+        <p>
+            In Python, a function is a reusable block of code that performs a specific task or set of tasks. Functions
+            allow you to encapsulate a sequence of statements into a single unit, which can be called and executed
+            elsewhere in your code. They play a fundamental role in structuring and organizing Python programs, making
+            them more readable, maintainable, and modular.
+        </p>
+    </div>
+    <div>
+        <h1>
+            Types of Functions
+        </h1>
+        <h2>
+            Built-in Functions
+            <br>
+            User-Defined Functions
+        </h2>
+    </div>
+    <div>
+        <h1>
+            Built-in Functions
+        </h1>
+        <p>
+
+            Built-in functions in Python are functions that are pre-defined in the Python language and are always
+            available for use without requiring you to write their implementations. These functions are part of the
+            Python standard library and serve a wide range of purposes. They cover various areas of programming, such as
+            mathematics, string manipulation, data manipulation, input/output, and more.
+        </p>
+        <p>
+            Here are some examples of common built-in functions in Python:
+        </p>
+        <div>
+            <p class="nomar">
+                `len()`: Returns the length (number of items) of an iterable object like a string, list, or tuple.
+            </p>
+            <div class="box">
+                <code class="synt">
+                    length = len("Python")
+                </code>
+            </div>
+            <p class="nomar">
+                `input()`: Accepts user input from the keyboard as a string.
+
+            </p>
+            <div class="box">
+                <code class="synt">
+                name = input("Enter your name: ")
+
+                </code>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>
+            User-Defined Functions
+        </h1>
+        <p>
+            User-defined functions in Python are functions that programmers create to perform specific tasks or
+            encapsulate a block of code for reuse within their programs. Unlike built-in functions, which are provided
+            by the Python language, user-defined functions are defined by the programmer. These functions allow you to
+            modularize your code, making it more organized, readable, and maintainable.
+        </p>
+        <h2>
+            Here are the key characteristics of user-defined functions in Python:
+        </h2>
+        <div>
+            <p class="nomar"><span class="parash">1] Function Definition:</span> To create a user-defined function, you
+                use
+                the `def` keyword, followed by the function name, a set of parentheses containing zero or more
+                parameters (input values), and a colon. The function's code block is indented and contains the
+                instructions for what the function does.
+
+            </p>
+            <div class="box"><code class="synt">
+                def my_function(parameter1, parameter2): <br>
+    # Function body <br>
+    # Code to perform specific tasks <br>
+
+            </code></div>
+        </div>
+        <div>
+            <p class="nomar">
+                <span class="parash">
+                    2] Function Call:
+                </span>
+                To execute a user-defined function and utilize its functionality, you simply call it by its name,
+                passing the required arguments (if any) within the parentheses.
+            </p>
+            <div class="box" style="margin-bottom: 0;"><code class="synt">
+                result = my_function(arg1, arg2)
+                
+            </code></div>
+            <h2 style="margin: 0;">OR</h2>
+            <div class="box"><code class="synt">
+               my_function(arg1, arg2)
+            </code></div>
+        </div>
+        <div>
+            <p class="nomar">
+                <span class="parash">
+                    3] Parameters and Arguments:
+                </span>
+                Parameters are the variables listed within the function's parentheses during its definition, while
+                arguments are the actual values passed to the function when it is called. Parameters receive the values
+                of the arguments when the function is invoked.
+            </p>
+        </div>
+        <div>
+            <p class="nomar">
+                <span class="parash">
+                    4] Return Statement:
+                </span>
+                User-defined functions can optionally return one or more values using the `return` statement. These
+                values
+                can then be assigned to variables or used in expressions when the function is called.
+            </p>
+            <div class="box"><code class="synt">
+                def add_numbers(a, b): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;result = a + b <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return result
+
+            </code></div>
+        </div>
+        <div>
+            <p>
+                <span class="parash">
+                    5] Function Scope:
+                </span>
+                Variables defined inside a function are typically local to that function, meaning they are not
+                accessible from outside the function unless explicitly returned.
+            </p>
+        </div>
+        <div>
+            <p class="nomar">
+                <span class="parash">
+                    6] Function Documentation (Docstring):
+                </span>
+                It's a good practice to include a docstring, a multi-line string enclosed in triple-quotes, to provide a
+                description of what the function does, any parameters it takes, and what it returns.
+            </p>
+            <div class="box"><code class="synt">
+                def my_function(parameter1, parameter2): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;"""  <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;This is the function's docstring. <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;It describes what the function does and its parameters. <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;""" <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;# Function body
+
+            </code></div>
+        </div>
+        <div>
+            <p class="nomar">
+                <span class="parash">
+                    7] Function Reusability:
+                </span>
+                User-defined functions can be reused throughout your program or even in other programs, making them a
+                valuable tool for organizing and modularizing code.
+            </p>
+            <p>
+                Here's a simple example of a user-defined function in Python:
+            </p>
+            <div class="box"><code class="synt">
+            def greet(name): <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"""This function greets the person passed in as 'name'.""" <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(f"Hello, {name}!")
+<br><br>
+            # Calling the function <br>
+            greet("Pandru")  # Output: Hello, Alice!
+
+            </code></div>
+        </div>
+    </div>
+</body>
+
+</html>
