@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Handling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="h3em">
+            File Handling in Python
+        </h1>
+    </div>
+    <div>
+        <p>
+            In Python, file handling refers to the process of working with files, which can include reading from and
+            writing to files. File handling is essential for various tasks like data storage, data retrieval,
+            configuration management, and more. Python provides built-in functions and methods for file handling, making
+            it easy to work with files.
+        </p>
+
+    </div>
+    <div>
+        <h2>
+            Here are some common file handling operations in Python:
+        </h2>
+
+    </div>
+    <div>
+        <h1>
+            Opening a File
+        </h1>
+        <p class="nomar">
+            You can use the `open()` function to open a file. It takes two arguments: the file name and the mode in
+            which you want to open the file (e.g., read, write, append, binary, etc.)
+        </p>
+        <div class="box">
+            <code class="synt">
+                # Open a file for reading <br>
+                file = open("example.txt", "r") <br>
+                 <br><br>
+                # Open a file for writing (creates a new file if it doesn't exist) <br>
+                file = open("example.txt", "w") <br>
+                 <br><br>
+                # Open a file for appending (adds data to the end of the file) <br>
+                file = open("example.txt", "a") <br>                
+            </code>
+        </div>
+    </div>
+    <div>
+        <h1>
+            Reading from a File
+        </h1>
+        <p class="nomar">
+            You can use various methods like `read()`, `readline()`, or `readlines()` to read data from a file.
+        </p>
+        <div class="box"><code class="synt">
+            # Reading the entire file <br>
+            data = file.read() <br>
+<br><br>
+            # Reading a single line <br>
+            line = file.readline() <br>
+<br><br>
+            # Reading all lines into a list <br>
+            lines = file.readlines() <br>
+
+        </code></div>
+    </div>
+    <div>
+        <h1>
+            Writing to a File
+        </h1>
+        <p class="nomar">
+            You can use the `write()` method to write data to a file.
+        </p>
+        <div class="box"><code class="synt">
+            file.write("Hello, World!")
+        </code></div>
+    </div>
+    <div>
+        <h1>
+            Closing a File
+        </h1>
+        <p class="nomar">
+            After working with a file, it's essential to close it using the close() method to release system resources.
+        </p>
+        <div class="box"><code class="synt">
+            file.close()
+
+        </code></div>
+    </div>
+    <div>
+        <h1>
+            Using a Context Manager
+        </h1>
+        <p>
+            It's a good practice to use the `with` statement when working with files. It automatically closes the file
+            when you're done with it, ensuring that resources are properly managed.
+        </p>
+    </div>
+    <div>
+        <h1>
+            File Modes
+        </h1>
+        <div>
+            <h2>
+                `"r"` (Read Mode):
+            </h2>
+            <p>
+                1] Opens the file for reading. <br>
+                2] If the file doesn't exist, it raises a `FileNotFoundError`. <br>
+                3] Default mode if not specified explicitly. <br>
+                Example: `open("example.txt", "r")`
+
+            </p>
+        </div>
+        <div>
+            <h2>
+                `"w"` (Write Mode):
+            </h2>
+            <p>
+                1] Opens the file for writing. <br>
+                2] If the file exists, it truncates (clears) its content. <br>
+                3] If the file doesn't exist, it creates a new file. <br>
+                Example: `open("example.txt", "w")`
+            </p>
+        </div>
+        <div>
+            <h2>
+                `"a"` (Append Mode):
+            </h2>
+            <p>
+                1] Opens the file for writing, but appends data to the end of the file. <br>
+                2] If the file doesn't exist, it creates a new file. <br>
+                Example: open("example.txt", "a")
+            </p>
+        </div>
+        <div>
+            <h2>
+                `"x"` (Exclusive Creation Mode):
+            </h2>
+            <p>
+                1] Creates a new file. <br>
+                2] If the file already exists, it raises a `FileExistsError`. <br>
+                Example: `open("new_file.txt", "x")`
+            </p>
+        </div>
+        <p>
+            These modes are used when opening files with the open() function in Python. They determine how the file can
+            be accessed and what operations can be performed on it. It's essential to choose the appropriate mode for
+            your specific file handling needs to ensure data integrity and security.
+        </p>
+        <div>
+            <h1>
+                2 in one mode
+            </h1>
+            <p>
+                Python provides three additional file modes: `"w+"`, `"r+"`, and `"a+"`. These modes combine both
+                reading and writing operations, allowing you to both read from and write to a file. Here's a brief explanation of each:
+            </p>
+        </div>
+        <div>
+            <h2>
+                `"w+"` (Write and Read Mode):
+            </h2>
+            <p>
+                1] Opens the file for both reading and writing. <br>
+                2] If the file exists, it truncates (clears) its content. <br>
+                3] If the file doesn't exist, it creates a new file. <br>
+                4] You can use `read()` and `write()` methods to perform both read and write operations. <br>
+                Example: `open("example.txt", "w+")`
+            </p>
+        </div>
+        <div>
+            <h1>
+                `"r+"` (Read and Write Mode):
+            </h1>
+            <p>
+                1] Opens the file for both reading and writing. <br>
+                2] The file must already exist; otherwise, it raises a FileNotFoundError. <br>
+                3] You can use read() and write() methods to perform both read and write operations. <br>
+                Example: `open("example.txt", "r+")`
+            </p>
+        </div>
+        <div>
+            <h1>
+                `"a+"` (Append and Read Mode):
+            </h1>
+            <p>
+                1] Opens the file for both reading and writing, with data appended to the end of the file. <br>
+                2] If the file doesn't exist, it creates a new file. <br>
+                3] You can use `read()` and `write()` methods to perform both read and write operations. <br>
+                Example: `open("example.txt", "a+")`
+            </p>
+        </div>
+        <p>
+            These modes are useful when you need to perform a combination of read and write operations on the same file.
+            However, you should be cautious when using them to avoid unintended consequences, such as overwriting or
+            losing data in the file. Always ensure that your code handles file operations correctly to maintain data
+            integrity.
+        </p>
+    </div>
+</body>
+
+</html>
