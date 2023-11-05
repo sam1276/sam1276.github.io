@@ -1,0 +1,204 @@
+Sure, let's break down each line of the code:
+
+1. `root = tk.Tk()`
+   - This line creates the main window for your application using tkinter (a library for creating graphical user interfaces).
+
+2. `root.title("World Clock")`
+   - Sets the title of the application window to "World Clock."
+
+3. `root.geometry("800x400")`
+   - Defines the initial size of the application window to be 800 pixels wide and 400 pixels tall.
+
+4. `style = ThemedStyle(root)`
+   - Creates a style object (`style`) that allows you to apply a visual theme to the GUI components within the window.
+
+5. `style.set_theme("plastik")`
+   - Sets the theme of the GUI components to "plastik," which changes the appearance of buttons, labels, and other elements to a predefined style.
+
+6. `country_var = tk.StringVar(root)`
+   - Creates a tkinter variable (`country_var`) to hold the currently selected country.
+
+7. `search_label = ttk.Label(root, text="Select a country:", font=("Helvetica", 14))`
+   - Creates a label (`search_label`) with the text "Select a country:" and a font style (Helvetica, size 14).
+
+8. `search_label.pack(pady=10)`
+   - Places the "Select a country" label within the main window, leaving 10 pixels of empty space below it.
+
+9. `country_timezones = load_country_timezones("country.csv")`
+   - Calls the `load_country_timezones` function to load country-timezone data from a CSV file named "country.csv" into the `country_timezones` dictionary.
+
+10. `country_menu = ttk.Combobox(root, textvariable=country_var, values=list(country_timezones.keys()), state="readonly")`
+    - Creates a Combobox (`country_menu`) that allows the user to select a country. It uses the `country_var` variable to store the selected country, and the available values are the keys from the `country_timezones` dictionary. The `state="readonly"` parameter makes it non-editable.
+
+11. `country_menu.pack(pady=10)`
+    - Places the Combobox within the window, leaving 10 pixels of empty space below it.
+
+12. `country_var.set("India")`
+    - Sets the default selected country in the Combobox to "India" using the `country_var` variable.
+
+13. `time_label = ttk.Label(root, text="", font=("Helvetica", 24))`
+    - Creates a label (`time_label`) with an empty text field and a font style (Helvetica, size 24).
+
+14. `time_label.pack(pady=20)`
+    - Places the "time_label" label within the window, leaving 20 pixels of empty space below it.
+
+15. `time_label_time = ttk.Label(root, text="", font=("Helvetica", 36))`
+    - Creates another label (`time_label_time`) with an empty text field and a larger font style (Helvetica, size 36) to display the time.
+
+16. `time_label_time.pack(pady=20)`
+    - Places the "time_label_time" label within the window, leaving 20 pixels of empty space below it.
+
+17. `update_clock()`
+    - Calls the `update_clock` function to initialize and start updating the displayed time.
+
+18. `country_menu.bind("<<ComboboxSelected>>", on_country_select)`
+    - Binds the "ComboboxSelected" event to the `on_country_select` function. This means that when you select a different country from the Combobox, it will trigger the `on_country_select` function to update the displayed time.
+
+19. `root.mainloop()`
+    - Starts the main event loop, which is essential for running the GUI application. This loop keeps the application running and responsive to user interactions.
+
+In summary, these lines set up the graphical user interface (GUI) of the world clock application, create the widgets (labels, Combobox) to interact with, and start the application's main event loop. The `update_clock` function is responsible for continuously updating and displaying the time for the selected country.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I'll explain each line of code for better understanding:
+
+```python
+import tkinter as tk
+from tkinter import ttk
+from datetime import datetime
+import pytz
+import csv
+from ttkthemes import ThemedStyle
+```
+
+- These lines import the necessary Python modules and libraries:
+  - `tkinter`: It's a GUI library for creating graphical user interfaces.
+  - `ttk` from `tkinter`: This module provides themed Tkinter widgets for creating a more modern and attractive interface.
+  - `datetime`: This module is used for working with dates and times.
+  - `pytz`: It's used for handling timezones.
+  - `csv`: This module is used for working with CSV files.
+  - `ThemedStyle` from `ttkthemes`: It provides the ability to apply themes to your GUI elements.
+
+```python
+def load_country_timezones(filename):
+    country_timezones = {}
+    with open(filename, 'r', encoding='utf-8') as file:  # Specify encoding for CSV
+        csv_reader = csv.reader(file)
+        for row in csv_reader:
+            if len(row) == 2:
+                country_name, timezone = row
+                country_timezones[country_name] = timezone
+    return country_timezones
+```
+
+- This is a function `load_country_timezones` that loads country-timezone data from a CSV file:
+  - It takes a `filename` as a parameter.
+  - It initializes an empty dictionary `country_timezones` to store country-timezone pairs.
+  - It opens the CSV file specified by `filename`, reads it using `csv.reader`, and processes each row.
+  - It checks if each row has exactly 2 values (country name and timezone) and adds them to the `country_timezones` dictionary.
+  - Finally, it returns the `country_timezones` dictionary.
+
+```python
+def update_clock():
+    selected_country = country_var.get()
+    timezone = pytz.timezone(country_timezones[selected_country])
+    current_time = datetime.now(timezone)
+    time_str = current_time.strftime("%Y-%m-%d %H:%M:%S")
+    time_label.config(text=f"Time In {selected_country} is - {timezone}", anchor="center", justify="center")
+    time_label_time.config(text=time_str, anchor="center", justify="center")
+    root.after(1000, update_clock)
+```
+
+- This is the `update_clock` function that updates the displayed time:
+  - It retrieves the selected country from the `country_var` variable.
+  - It retrieves the corresponding timezone using the `pytz` library.
+  - It gets the current time in that timezone.
+  - It formats the time as a string.
+  - It updates the labels (`time_label` and `time_label_time`) with the selected country and the formatted time.
+  - It schedules the function to be called again after 1000 milliseconds (1 second) using `root.after(1000, update_clock)` to continuously update the time.
+
+```python
+def on_country_select(event):
+    update_clock()
+```
+
+- This is the `on_country_select` function:
+  - It is called when a country is selected from the dropdown menu.
+  - It simply calls the `update_clock` function to update the displayed time.
+
+The following lines create the tkinter GUI and its elements:
+
+```python
+root = tk.Tk()
+root.title("World Clock")
+root.geometry("800x400")
+
+style = ThemedStyle(root)
+style.set_theme("plastik")
+
+country_var = tk.StringVar(root)
+search_label = ttk.Label(root, text="Select a country:", font=("Helvetica", 14))
+search_label.pack(pady=10)
+
+country_timezones = load_country_timezones("country.csv")
+
+country_menu = ttk.Combobox(root, textvariable=country_var, values=list(country_timezones.keys()), state="readonly")
+country_menu.pack(pady=10)
+country_var.set("India")
+time_label = ttk.Label(root, text="", font=("Helvetica", 24))
+time_label.pack(pady=20)
+
+time_label_time = ttk.Label(root, text="", font=("Helvetica", 36))
+time_label_time.pack(pady=20)
+
+update_clock()
+
+country_menu.bind("<<ComboboxSelected>>", on_country_select)
+
+root.mainloop()
+```
+
+- These lines create the main GUI window and its elements:
+  - It initializes a tkinter window and sets its title and geometry (size).
+  - It applies a theme ("plastik") using the `ThemedStyle` object.
+  - It creates a tkinter `StringVar` named `country_var` to hold the selected country.
+  - It creates a label (`search_label`) to instruct the user to select a country.
+  - It loads country-timezone data from a CSV file into the `country_timezones` dictionary.
+  - It creates a Combobox (`country_menu`) to select a country with a list of available countries.
+  - It sets the default selected country to "India" using `country_var.set("India")`.
+  - It creates two labels (`time_label` and `time_label_time`) to display the selected country and its corresponding time.
+  - It calls `update_clock()` to initialize the displayed time.
+  - It binds the `<<ComboboxSelected>>` event to the `on_country_select` function, ensuring that the time is updated when a new country is selected.
+  - Finally, it starts the main event loop with `root.mainloop()`, which displays the GUI and allows user interaction.
+
+This code creates a simple world clock application using tkinter and should work as intended as long as the "country.csv" file is correctly formatted with country names and corresponding timezones.
