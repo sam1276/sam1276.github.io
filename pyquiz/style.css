@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2c3e50; /* Midnight Blue */
+    color: #ecf0f1; /* Light Grayish Blue */
+}
+
+.container {
+    background-color: #ecf0f1; /* Light Grayish Blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+#question-container {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3498db; /* Dodger Blue */
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db; /* Dodger Blue */
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker Dodger Blue on hover */
+}
+
+.correct {
+    background-color: #2ecc71; /* Emerald Green */
+}
+
+.incorrect {
+    background-color: #e74c3c; /* Alizarin Red */
+}
+
+#next-question-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    background-color: #e67e22; /* Carrot Orange */
+}
+
+#next-question-button:hover {
+    background-color: #d35400; /* Darker Carrot Orange on hover */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #3498db; /* Dodger Blue */
+    font-weight: bold;
+}

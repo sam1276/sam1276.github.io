@@ -1,0 +1,156 @@
+[
+    {
+        "question": "What does the 'print' function do in Python?",
+        "options": [
+            "Reads user input",
+            "Displays output to the console",
+            "Performs mathematical operations",
+            "Defines a variable"
+        ],
+        "correctAnswer": "Displays output to the console"
+    },
+    {
+        "question": "How do you declare a variable in Python?",
+        "options": [
+            "var x = 5",
+            "x = 5",
+            "int x = 5",
+            "$x = 5"
+        ],
+        "correctAnswer": "x = 5"
+    },
+    {
+        "question": "What is the purpose of the 'input' function in Python?",
+        "options": [
+            "Prints text to the console",
+            "Pauses the program execution",
+            "Takes user input from the console",
+            "Performs a mathematical calculation"
+        ],
+        "correctAnswer": "Takes user input from the console"
+    },
+    {
+        "question": "Which of the following is a valid Python comment?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment",
+            "/* This is a comment */",
+            "<!-- This is a comment -->"
+        ],
+        "correctAnswer": "# This is a comment"
+    },
+    {
+        "question": "What is the result of the expression '3 + 4 * 2' in Python?",
+        "options": [
+            "14",
+            "11",
+            "10",
+            "24"
+        ],
+        "correctAnswer": "11"
+    },
+    
+    {
+        "question": "What does the 'elif' keyword stand for in Python?",
+        "options": [
+            "Else if",
+            "Element if",
+            "End if",
+            "Elongate if"
+        ],
+        "correctAnswer": "Else if"
+    },
+    {
+        "question": "How is an infinite loop created using 'while' in Python?",
+        "options": [
+            "while True:",
+            "while False:",
+            "while 1:",
+            "while 0:"
+        ],
+        "correctAnswer": "while True:"
+    },
+    {
+        "question": "What is the purpose of 'else' in a Python 'try...except' block?",
+        "options": [
+            "To indicate the end of the block",
+            "To handle an exception if the 'try' block fails",
+            "To execute a block of code regardless of whether an exception occurred or not",
+            "To declare a variable"
+        ],
+        "correctAnswer": "To execute a block of code regardless of whether an exception occurred or not"
+    },
+    {
+        "question": "How do you write a comment in Python?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment",
+            "' This is a comment",
+            "* This is a comment *"
+        ],
+        "correctAnswer": "# This is a comment"
+    },
+    {
+        "question": "What method is used to write data to a text file in Python?",
+        "options": [
+            "writeText()",
+            "appendData()",
+            "write()",
+            "saveToFile()"
+        ],
+        "correctAnswer": "write()"
+    },
+    {
+        "question": "In Python, which of the following is a correct way to create an empty list?",
+        "options": [
+            "list = []",
+            "list = {}",
+            "list = ()",
+            "list = [None]"
+        ],
+        "correctAnswer": "list = []"
+    },
+    {
+        "question": "How do you close a file in Python after reading its content?",
+        "options": [
+            "closeFile()",
+            "endFile()",
+            "file.close()",
+            "shutdownFile()"
+        ],
+        "correctAnswer": "file.close()"
+    },
+    {
+        "question": "Which operator is used for exponentiation in Python?",
+        "options": [
+            "^",
+            "**",
+            "^^",
+            "*^*"
+        ],
+        "correctAnswer": "**"
+    },
+    {
+        "question": "How can you convert a string to lowercase in Python?",
+        "options": [
+            "string.lowercase()",
+            "lower(string)",
+            "string.toLower()",
+            "string.lower()"
+        ],
+        "correctAnswer": "string.lower()"
+    },
+    {
+        "question": "What is the purpose of 'break' statement in a loop?",
+        "options": [
+            "To start the loop over",
+            "To exit the loop immediately",
+            "To skip the current iteration",
+            "To check the next condition in the loop"
+        ],
+        "correctAnswer": "To exit the loop immediately"
+    }
+
+
+
+]
