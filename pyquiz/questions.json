@@ -149,8 +149,407 @@
             "To check the next condition in the loop"
         ],
         "correctAnswer": "To exit the loop immediately"
+    },
+
+    {
+        "question": "What does the 'csv' module in Python provide?",
+        "options": [
+            "Graphical User Interface (GUI) components",
+            "Support for working with comma-separated values files",
+            "Mathematical functions",
+            "Random number generation"
+        ],
+        "correctAnswer": "Support for working with comma-separated values files"
+    },
+    {
+        "question": "How can you read data from a CSV file using the 'csv' module?",
+        "options": [
+            "csv.read_file()",
+            "csv.parse()",
+            "csv.load()",
+            "csv.reader()"
+        ],
+        "correctAnswer": "csv.reader()"
+    },
+    {
+        "question": "Which function from the 'random' module is used to generate a random float in the range [0.0, 1.0)?",
+        "options": [
+            "random.float()",
+            "random.random()",
+            "random.uniform()",
+            "random.range()"
+        ],
+        "correctAnswer": "random.random()"
+    },
+    {
+        "question": "In the 'pickle' module, what does the 'dump' function do?",
+        "options": [
+            "Load data from a pickle file",
+            "Save data to a pickle file",
+            "Delete a pickle file",
+            "Compress a pickle file"
+        ],
+        "correctAnswer": "Save data to a pickle file"
+    },
+    {
+        "question": "Which of the following is a valid method for finding the square root of a number using the 'math' module?",
+        "options": [
+            "math.square_root()",
+            "math.sqrt()",
+            "math.power()",
+            "math.log()"
+        ],
+        "correctAnswer": "math.sqrt()"
+    },
+    {
+        "question": "What does the 'csv.DictReader' class in Python do?",
+        "options": [
+            "Reads a CSV file as a list of dictionaries",
+            "Reads a CSV file as a list of lists",
+            "Writes data to a CSV file",
+            "Creates a CSV file"
+        ],
+        "correctAnswer": "Reads a CSV file as a list of dictionaries"
+    },
+    {
+        "question": "Which 'random' module function is used to shuffle the elements of a list randomly?",
+        "options": [
+            "random.shuffle()",
+            "random.permute()",
+            "random.mix()",
+            "random.sort()"
+        ],
+        "correctAnswer": "random.shuffle()"
+    },
+    {
+        "question": "What is the purpose of the 'math.ceil()' function?",
+        "options": [
+            "Round a number down to the nearest integer",
+            "Round a number up to the nearest integer",
+            "Find the floor division of two numbers",
+            "Calculate the absolute value of a number"
+        ],
+        "correctAnswer": "Round a number up to the nearest integer"
+    },
+    {
+        "question": "How can you write a Python dictionary to a file using the 'pickle' module?",
+        "options": [
+            "pickle.save_file()",
+            "pickle.dump()",
+            "pickle.write()",
+            "pickle.serialize()"
+        ],
+        "correctAnswer": "pickle.dump()"
+    },
+    {
+        "question": "In the 'math' module, which function returns the value of e raised to the power of x?",
+        "options": [
+            "math.exp()",
+            "math.power()",
+            "math.e()",
+            "math.log()"
+        ],
+        "correctAnswer": "math.exp()"
+    },
+    {
+        "question": "What is the primary difference between parameters and arguments in a function?",
+        "options": [
+            "Parameters are values passed to a function, and arguments are variables defined in a function.",
+            "Parameters are variables defined in a function, and arguments are values passed to a function.",
+            "Parameters and arguments are interchangeable terms.",
+            "There is no difference between parameters and arguments."
+        ],
+        "correctAnswer": "Parameters are variables defined in a function, and arguments are values passed to a function."
+    },
+    {
+        "question": "What is the output when calling `print(multiply_numbers(3, 4))` with the following function?\n```python\ndef multiply_numbers(a, b):\n    return a * b\n```",
+        "options": [
+            "12",
+            "7",
+            "34",
+            "None of the above"
+        ],
+        "correctAnswer": "12"
+    },
+    {
+        "question": "In Python functions, what does the term 'variable scope' refer to?",
+        "options": [
+            "The range of values a variable can take within a program.",
+            "The region of code where a variable is accessible.",
+            "The total number of variables in a function.",
+            "The type of variables used in a function."
+        ],
+        "correctAnswer": "The region of code where a variable is accessible."
+    },
+    {
+        "question": "Write a Python function called `power` that takes two parameters, `base` and `exponent`, and returns the result of raising the base to the power of the exponent.",
+        "options": [
+            "def power(base, exponent): return base ^ exponent",
+            "def power(base, exponent): return base ** exponent",
+            "def power(base, exponent): return base * exponent",
+            "def power(base, exponent): return base // exponent"
+        ],
+        "correctAnswer": "def power(base, exponent): return base ** exponent"
+    },
+    {
+        "question": "What is recursion in Python functions?",
+        "options": [
+            "A function that performs mathematical recursion operations.",
+            "A function that calls itself, either directly or indirectly.",
+            "A function that returns multiple values.",
+            "A function that iterates over a list recursively."
+        ],
+        "correctAnswer": "A function that calls itself, either directly or indirectly."
+    },
+    {
+        "question": "How can you define a Python function called `greet` that takes a parameter `name` with a default value of 'Guest'?",
+        "options": [
+            "def greet(name='Guest'):",
+            "def greet(name): default='Guest'",
+            "def greet(default='Guest', name):",
+            "def greet(name=default('Guest')):"
+        ],
+        "correctAnswer": "def greet(name='Guest'):"
+    },
+    {
+        "question": "Why is specifying a return type for a function important in Python?",
+        "options": [
+            "It enforces the type of arguments passed to the function.",
+            "It improves code readability.",
+            "It ensures the function returns a specific type of value.",
+            "In Python, return types are optional and not necessary."
+        ],
+        "correctAnswer": "In Python, return types are optional and not necessary."
+    },
+    {
+        "question": "How does using functions enhance code modularity?",
+        "options": [
+            "Functions allow code to be divided into smaller, reusable units.",
+            "Functions increase the overall size of the code.",
+            "Functions make code less modular and harder to maintain.",
+            "Code modularity is not affected by the use of functions."
+        ],
+        "correctAnswer": "Functions allow code to be divided into smaller, reusable units."
+    },
+    {
+        "question": "What is a lambda function in Python?",
+        "options": [
+            "A function with a large number of parameters.",
+            "A function defined using the 'lambda' keyword for concise, anonymous functions.",
+            "A function that only accepts integers.",
+            "A function that returns a lambda expression."
+        ],
+        "correctAnswer": "A function defined using the 'lambda' keyword for concise, anonymous functions."
+    },
+    {
+        "question": "What role does error handling play in Python functions, and how can try-except blocks be used?",
+        "options": [
+            "Error handling is optional and not necessary in Python functions.",
+            "Error handling allows functions to ignore errors and proceed with execution.",
+            "try-except blocks catch and handle errors that may occur during function execution.",
+            "Error handling is only relevant in non-trivial programs and not in functions."
+        ],
+        "correctAnswer": "try-except blocks catch and handle errors that may occur during function execution."
+    },
+    {
+        "question": "What is the correct way to initialize an empty list in Python?",
+        "options": [
+            "list = {}",
+            "list = ()",
+            "list = []",
+            "list = [None]"
+        ],
+        "correctAnswer": "list = []"
+    },
+    {
+        "question": "How do you access the third element in a list named 'my_list'?",
+        "options": [
+            "my_list[2]",
+            "my_list[3]",
+            "my_list(3)",
+            "my_list.get(2)"
+        ],
+        "correctAnswer": "my_list[2]"
+    },
+    {
+        "question": "What method is used to add an element to the end of a list in Python?",
+        "options": [
+            "add()",
+            "append()",
+            "insert()",
+            "extend()"
+        ],
+        "correctAnswer": "append()"
+    },
+    {
+        "question": "In Python, what is the purpose of the 'pop()' method for lists?",
+        "options": [
+            "To remove the last element from the list",
+            "To remove an element at a specific index",
+            "To remove the first element from the list",
+            "To remove all elements from the list"
+        ],
+        "correctAnswer": "To remove the last element from the list"
+    },
+    {
+        "question": "How do you create an empty dictionary in Python?",
+        "options": [
+            "dict = {}",
+            "dict = ()",
+            "dict = []",
+            "dict = {None}"
+        ],
+        "correctAnswer": "dict = {}"
+    },
+    {
+        "question": "What is the correct way to access the value associated with the key 'name' in a dictionary named 'my_dict'?",
+        "options": [
+            "my_dict['name']",
+            "my_dict.get('name')",
+            "my_dict.value('name')",
+            "my_dict(1, 'name')"
+        ],
+        "correctAnswer": "my_dict['name']"
+    },
+    {
+        "question": "Which method is used to add a new key-value pair to a dictionary in Python?",
+        "options": [
+            "add()",
+            "insert()",
+            "append()",
+            "update()"
+        ],
+        "correctAnswer": "update()"
+    },
+    {
+        "question": "What happens if you try to access a key that is not present in a dictionary using the 'get()' method?",
+        "options": [
+            "It returns None",
+            "It raises a KeyError",
+            "It returns an empty string",
+            "It returns the key itself"
+        ],
+        "correctAnswer": "It returns None"
+    },
+    {
+        "question": "In Python, how do you remove a key-value pair from a dictionary using the 'pop()' method?",
+        "options": [
+            "Specify the key as an argument",
+            "Specify the value as an argument",
+            "Remove the last key-value pair",
+            "Remove a random key-value pair"
+        ],
+        "correctAnswer": "Specify the key as an argument"
+    },
+    {
+        "question": "What is the purpose of the 'keys()' method in a Python dictionary?",
+        "options": [
+            "To retrieve the values of all keys",
+            "To retrieve a list of all keys",
+            "To add new keys to the dictionary",
+            "To remove keys from the dictionary"
+        ],
+        "correctAnswer": "To retrieve a list of all keys"
+    },
+    {
+        "question": "What does the 'len()' function in Python do?",
+        "options": [
+            "Returns the length of a list or string",
+            "Calculates the logarithm of a number",
+            "Generates a random number",
+            "Counts the number of occurrences of a character in a string"
+        ],
+        "correctAnswer": "Returns the length of a list or string"
+    },
+    {
+        "question": "How do you check if a variable 'x' is of type 'int' in Python?",
+        "options": [
+            "isinteger(x)",
+            "type(x) == 'int'",
+            "typeof(x) == 'integer'",
+            "isinstance(x, int)"
+        ],
+        "correctAnswer": "isinstance(x, int)"
+    },
+    {
+        "question": "What is the purpose of the 'range()' function in Python?",
+        "options": [
+            "Generates a sequence of numbers",
+            "Calculates the factorial of a number",
+            "Finds the maximum value in a list",
+            "Converts a string to uppercase"
+        ],
+        "correctAnswer": "Generates a sequence of numbers"
+    },
+    {
+        "question": "How do you remove all elements from a list in Python?",
+        "options": [
+            "list.clear()",
+            "list.remove_all()",
+            "list.delete()",
+            "list.pop_all()"
+        ],
+        "correctAnswer": "list.clear()"
+    },
+    {
+        "question": "What is the result of the expression '5 // 2' in Python?",
+        "options": [
+            "2.5",
+            "2",
+            "2.0",
+            "2.25"
+        ],
+        "correctAnswer": "2"
+    },
+    {
+        "question": "In Python, what does the 'max()' function do?",
+        "options": [
+            "Finds the maximum value in a list",
+            "Calculates the square root of a number",
+            "Generates a random number",
+            "Returns the length of a string"
+        ],
+        "correctAnswer": "Finds the maximum value in a list"
+    },
+    {
+        "question": "What is the purpose of the 'sorted()' function in Python?",
+        "options": [
+            "Sorts a list in ascending order",
+            "Reverses the elements of a list",
+            "Shuffles the elements of a list",
+            "Counts the occurrences of each element in a list"
+        ],
+        "correctAnswer": "Sorts a list in ascending order"
+    },
+    {
+        "question": "How do you check if a key exists in a dictionary named 'my_dict'?",
+        "options": [
+            "'key' in my_dict",
+            "my_dict.contains('key')",
+            "my_dict.has_key('key')",
+            "exists(my_dict, 'key')"
+        ],
+        "correctAnswer": "'key' in my_dict"
+    },
+    {
+        "question": "What does the 'map()' function in Python do?",
+        "options": [
+            "Applies a function to each element of an iterable",
+            "Creates a mapping of keys to values",
+            "Returns the maximum value in a list",
+            "Converts a list of strings to uppercase"
+        ],
+        "correctAnswer": "Applies a function to each element of an iterable"
+    },
+    {
+        "question": "In Python, how do you concatenate two lists 'list1' and 'list2'?",
+        "options": [
+            "list1.add(list2)",
+            "list1.concatenate(list2)",
+            "list1 + list2",
+            "concat(list1, list2)"
+        ],
+        "correctAnswer": "list1 + list2"
     }
-
-
 
 ]
