@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padh le</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        #video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
-<div style="text-align: center; margin-top: 20px;">
-    <video controls autoplay width="100% height="auto">
-      
+<div id="video-container">
+    <video controls autoplay loop>
         <source src="padhe.mp4" type="video/mp4">
     </video>
 </div>
